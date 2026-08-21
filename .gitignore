@@ -1,0 +1,27 @@
+# Letras — NUNCA versionar.
+# Este arquivo guarda o texto integral das musicas, que e material protegido
+# por direito autoral. O repositorio contem apenas estrutura e comentario
+# original; a letra fica so na maquina de quem usa.
+letras.local.js
+
+# Arquivos temporarios de geracao/validacao
+_novo.tmp.js
+_val.js
+_val.cjs
+*.tmp
+*.tmp.js
+
+# Node (caso algum dia entre ferramenta de build)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Sistema operacional / editores
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

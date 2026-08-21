@@ -1,0 +1,261 @@
+/* ---------- base / tema ---------- */
+:root{
+  --bg:#0d0c11;
+  --papel:#17161d;
+  --linha-papel:#26242e;
+  --tinta:#f3efe8;
+  --tinta-fraca:#9a938d;
+  --c0:#7aa2ff;
+  --c1:#e2586c;
+  --c2:#c184e8;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+body[data-tema="claro"]{
+  --bg:#f7f4ee;
+  --papel:#ffffff;
+  --linha-papel:#e6e0d6;
+  --tinta:#14131a;
+  --tinta-fraca:#6b645d;
+  --c0:#1e46c8;
+  --c1:#8e1424;
+  --c2:#7f36a8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg);
+  color:var(--tinta);
+  font-family:var(--sans);
+  overflow:hidden;
+  cursor:pointer;
+  transition:background .5s ease,color .5s ease;
+}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+/* ---------- palco / slides ---------- */
+.palco{position:relative;width:100vw;height:100vh;height:100dvh;overflow:hidden}
+
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  /* o topo nunca fica abaixo do cabecalho, que cresce quando as abas quebram */
+  padding:max(clamp(56px,7vh,90px), calc(var(--hud-alto,62px) + 16px))
+          clamp(28px,5vw,90px)
+          clamp(60px,8vh,96px);
+  will-change:transform,opacity;
+}
+.slide.entra-trecho{animation:entraTrecho .55s cubic-bezier(.22,.9,.24,1) both}
+.slide.sai-trecho{animation:saiTrecho .45s cubic-bezier(.5,0,.7,.2) both}
+.slide.entra-trecho-inv{animation:entraTrechoInv .55s cubic-bezier(.22,.9,.24,1) both}
+.slide.sai-trecho-inv{animation:saiTrechoInv .45s cubic-bezier(.5,0,.7,.2) both}
+.slide.entra-musica{animation:entraMusica .8s cubic-bezier(.16,1,.3,1) both}
+.slide.sai-musica{animation:saiMusica .55s ease both}
+
+@keyframes entraTrecho{from{opacity:0;transform:translateY(38px)}to{opacity:1;transform:none}}
+@keyframes saiTrecho{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-30px)}}
+@keyframes entraTrechoInv{from{opacity:0;transform:translateY(-38px)}to{opacity:1;transform:none}}
+@keyframes saiTrechoInv{from{opacity:1;transform:none}to{opacity:0;transform:translateY(30px)}}
+@keyframes entraMusica{from{opacity:0;transform:scale(1.07);filter:blur(10px)}to{opacity:1;transform:none;filter:none}}
+@keyframes saiMusica{from{opacity:1;transform:scale(1);filter:blur(0)}to{opacity:0;transform:scale(.94);filter:blur(8px)}}
+
+/* ---------- capa ---------- */
+.capa{justify-content:center;align-items:flex-start;max-width:1100px;margin:0 auto}
+.capa .faixa{
+  font:600 .72rem/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--c1);margin-bottom:clamp(18px,3vh,30px);
+}
+.capa h1{
+  font-family:var(--serif);font-weight:400;line-height:1.02;
+  font-size:clamp(2.6rem,7.6vw,6.4rem);letter-spacing:-.02em;
+}
+.capa .epigrafe{
+  font-family:var(--serif);font-style:italic;color:var(--tinta-fraca);
+  font-size:clamp(1rem,1.8vw,1.5rem);margin-top:clamp(12px,2vh,22px);
+}
+.capa .contexto{
+  margin-top:clamp(24px,4vh,44px);max-width:62ch;
+  font-size:clamp(.92rem,1.15vw,1.06rem);line-height:1.65;color:var(--tinta-fraca);
+  border-left:2px solid var(--c0);padding-left:20px;
+}
+.capa .dica{margin-top:clamp(24px,4vh,40px);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-fraca);opacity:.7}
+.capa .dica::after{content:"";display:inline-block;width:26px;height:1px;background:currentColor;vertical-align:middle;margin-left:12px;animation:pisca 1.6s infinite}
+@keyframes pisca{0%,100%{opacity:.25}50%{opacity:1}}
+
+/* ---------- trecho ---------- */
+.cabecalho-trecho{
+  display:flex;align-items:baseline;gap:14px;flex:0 0 auto;
+  margin-bottom:clamp(10px,2vh,24px);
+}
+.cabecalho-trecho .num{
+  font:600 .7rem/1 var(--sans);letter-spacing:.24em;color:var(--c1);
+}
+.cabecalho-trecho .rotulo-trecho{
+  font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.5vw,1.35rem);color:var(--tinta-fraca);
+}
+
+.conteudo{flex:1 1 auto;min-height:0;overflow:hidden;display:flex;align-items:center}
+.grade{
+  position:relative;width:100%;
+  display:grid;
+  grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+  gap:clamp(70px,11vw,190px);
+  align-items:center;
+}
+
+/* letra */
+.letra{font-family:var(--serif)}
+.estrofe+.estrofe{margin-top:calc(var(--k,1) * 1.15em)}
+.linha{
+  font-size:calc(var(--k,1) * clamp(17px,2.05vw,31px));
+  line-height:1.52;letter-spacing:-.005em;
+  position:relative;padding-right:6px;
+  transition:opacity .3s ease;
+}
+.letra.focando .linha{opacity:.28}
+.letra.focando .linha.acesa{opacity:1}
+.repeticao{
+  margin-top:calc(var(--k,1) * 1.1em);
+  font-family:var(--sans);font-size:calc(var(--k,1) * .78rem);
+  letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-fraca);
+  display:inline-flex;align-items:center;gap:10px;
+}
+.repeticao::before{content:"";width:22px;height:1px;background:currentColor;display:block}
+
+/* notas */
+.notas{display:flex;flex-direction:column;gap:calc(var(--k,1) * clamp(10px,1.6vh,20px))}
+.nota{
+  background:var(--papel);
+  border:1px solid var(--linha-papel);
+  border-left:3px solid var(--cor);
+  border-radius:3px;
+  padding:calc(var(--k,1) * 14px) calc(var(--k,1) * 18px);
+  opacity:0;transform:translateX(16px);
+  animation:entraNota .5s cubic-bezier(.22,.9,.24,1) forwards;
+  animation-delay:var(--atraso);
+  transition:box-shadow .3s;
+}
+.nota:hover{box-shadow:0 6px 26px rgba(0,0,0,.28)}
+@keyframes entraNota{to{opacity:1;transform:none}}
+.nota h3{
+  font:600 calc(var(--k,1) * .78rem)/1.3 var(--sans);
+  letter-spacing:.04em;color:var(--cor);margin-bottom:calc(var(--k,1) * 6px);
+}
+.nota p{
+  font-size:calc(var(--k,1) * clamp(12.5px,.95vw,15.5px));
+  line-height:1.6;color:var(--tinta);opacity:.88;
+}
+
+/* fios */
+.fios{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.fios path{
+  fill:none;stroke:var(--cor);stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:var(--comp);stroke-dashoffset:var(--comp);
+  animation:desenha .75s cubic-bezier(.4,0,.2,1) forwards;
+  animation-delay:var(--atraso);
+  opacity:.85;
+}
+@keyframes desenha{to{stroke-dashoffset:0}}
+.fios path.aceso{stroke-width:2.6;opacity:1}
+.fios path.escuro{opacity:.16}
+
+/* ---------- hud ---------- */
+.hud{
+  position:fixed;left:0;right:0;z-index:5;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px clamp(20px,4vw,44px);
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta-fraca);
+  pointer-events:none;
+}
+.hud-topo{top:0;gap:20px;align-items:flex-start}
+.contador{flex:0 0 auto;white-space:nowrap;padding-top:8px}
+.hud-base{bottom:0;gap:20px}
+.hud .nav{pointer-events:auto;font-size:1.1rem;opacity:.45;padding:6px 12px;border-radius:4px;transition:opacity .2s,background .2s}
+.hud .nav:hover{opacity:1;background:var(--papel)}
+.hud .nav[disabled]{opacity:.12;cursor:default;background:none}
+
+/* abas de musicas (pular sem passar pelos trechos).
+   quebram em varias linhas quando nao cabem: nada e cortado */
+.seletor{
+  display:flex;align-items:center;gap:6px;
+  flex-wrap:wrap;
+  pointer-events:auto;
+  flex:1 1 auto;min-width:0;
+}
+.aba{
+  flex:0 0 auto;
+  font:600 .68rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--tinta-fraca);white-space:nowrap;
+  padding:7px 11px;border-radius:3px;
+  border:1px solid transparent;
+  transition:color .2s,background .2s,border-color .2s;
+}
+/* muitas musicas: aperta um pouco para caber mais na tela */
+.seletor.muitas .aba{padding:7px 8px;letter-spacing:.08em;font-size:.64rem}
+.aba:hover{color:var(--tinta);background:var(--papel)}
+.aba.atual{color:var(--tinta);border-color:var(--c1)}
+.aba .indice-aba{opacity:.5;margin-right:6px}
+.pontos{display:flex;gap:7px;flex:1;justify-content:center;pointer-events:auto}
+.ponto{width:22px;height:3px;border-radius:2px;background:var(--tinta-fraca);opacity:.22;transition:opacity .3s,background .3s}
+.ponto.vista{opacity:.5}
+.ponto.ativo{opacity:1;background:var(--c1)}
+.rotulo{font-weight:600;color:var(--tinta);opacity:.75}
+
+/* ---------- overlay (importar / indice / ajuda) ---------- */
+.overlay{
+  position:fixed;inset:0;z-index:20;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  padding:clamp(24px,5vw,60px);cursor:default;
+  animation:aparece .3s ease both;
+}
+.overlay.oculto{display:none}
+@keyframes aparece{from{opacity:0}to{opacity:1}}
+.painel{width:min(880px,100%);max-height:100%;overflow:auto}
+.painel h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.4vw,2.6rem);margin-bottom:10px}
+.painel .sub{color:var(--tinta-fraca);font-size:.95rem;line-height:1.6;margin-bottom:22px;max-width:64ch}
+.painel textarea{
+  width:100%;height:min(44vh,400px);resize:vertical;
+  background:var(--papel);color:var(--tinta);
+  border:1px solid var(--linha-papel);border-radius:4px;
+  padding:16px;font:14px/1.55 ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+.painel textarea:focus{outline:2px solid var(--c0);outline-offset:1px}
+.barra{display:flex;align-items:center;gap:14px;margin-top:16px;flex-wrap:wrap}
+.botao{
+  background:var(--c1);color:#fff;border-radius:4px;padding:11px 22px;
+  font-weight:600;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;
+  transition:filter .2s,opacity .2s;
+}
+.botao:hover{filter:brightness(1.12)}
+.botao[disabled]{opacity:.35;cursor:not-allowed}
+.botao.secundario{background:transparent;color:var(--tinta-fraca);border:1px solid var(--linha-papel)}
+.estado{font-size:.85rem;color:var(--tinta-fraca)}
+.estado.alerta{color:var(--c1)}
+
+.indice{display:grid;gap:26px}
+.indice-musica h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin-bottom:12px}
+.indice-lista{display:flex;flex-wrap:wrap;gap:8px}
+.indice-item{
+  border:1px solid var(--linha-papel);background:var(--papel);
+  border-radius:3px;padding:8px 14px;font-size:.82rem;color:var(--tinta-fraca);
+  transition:border-color .2s,color .2s;
+}
+.indice-item:hover,.indice-item.atual{border-color:var(--c1);color:var(--tinta)}
+.atalhos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 28px;margin-top:8px}
+.atalho{display:flex;gap:12px;align-items:baseline;font-size:.88rem;color:var(--tinta-fraca)}
+.atalho kbd{
+  background:var(--papel);border:1px solid var(--linha-papel);border-bottom-width:2px;
+  border-radius:4px;padding:2px 8px;font:600 .75rem var(--sans);color:var(--tinta);min-width:32px;text-align:center;
+}
+
+/* ---------- telas estreitas ---------- */
+@media (max-width:860px){
+  .grade{grid-template-columns:1fr;gap:clamp(20px,3vh,32px)}
+  .fios{display:none}
+  .conteudo{align-items:flex-start;overflow-y:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .slide,.nota,.fios path{animation-duration:.01ms !important}
+}

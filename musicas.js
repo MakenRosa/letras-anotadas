@@ -2556,7 +2556,7 @@ window.MUSICAS = [
           { linhas: [2, 2], cor: 1, titulo: 'O que os vizinhos dizem',
             texto: '"Nosferatu" é o filme de vampiro de 1922, e o nome virou sinônimo de criatura que evita a luz. A frase é atribuída aos vizinhos: é a única vez que a música mostra o casal visto de fora, e de fora eles são os que não saem de casa.' },
           { linhas: [3, 3], cor: 2, titulo: 'O castelo ao contrário',
-            texto: 'Castlevania é uma série de videogames sobre um castelo cheio de monstros, e o detalhe é preciso: em "Symphony of the Night", ao chegar ao fim, o jogador recebe o mesmo castelo invertido de cabeça para baixo para percorrer de novo. O verso usa isso para descrever a casa dos dois — a mesma planta, virada.' }
+            texto: 'Castlevania é uma série de videogames sobre um castelo cheio de monstros, e em "Symphony of the Night" o jogador recebe, no fim, o mesmo castelo invertido para percorrer de novo — daí a imagem. Mas o que está invertido aqui não é a planta: é onde ficam os monstros. O verso vem logo depois da frase dos vizinhos, o único momento em que o casal é visto de fora, e o possessivo entrega o resto — no castelo deles, o assombrado é o lado de fora, e quem mora dentro está a salvo das pessoas.' }
         ]
       },
 

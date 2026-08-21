@@ -355,6 +355,8 @@
 
     function refazerLayout() {
       if (slideAtivo !== novo || !novo.parentNode) return;
+      medirContador();
+      medirHud();
       ajustarEscala(novo);
       desenharFios(novo);
     }
@@ -370,6 +372,27 @@
   }
 
   /* ------------------------------------------------- pular entre musicas */
+
+  /* o contador alterna entre "abertura" e "trecho X de Y". Sem largura fixa ele
+     encolhe e estica a cada slide, e as abas ao lado mudam de linha junto.
+     Medimos uma vez o rotulo mais largo possivel (o maior numero de trechos
+     entre todas as musicas) e travamos essa largura. Nao da para estimar em ch:
+     a HUD tem letter-spacing e caixa alta. */
+  function medirContador() {
+    if (!elContador) return;
+    var maior = 0;
+    MUSICAS.forEach(function (m) {
+      if (m.trechos.length > maior) maior = m.trechos.length;
+    });
+    var molde = 'trecho ' + maior + ' de ' + maior;
+    var texto = elContador.textContent;
+    elContador.style.width = 'auto';
+    elContador.textContent = molde;
+    var largura = Math.ceil(elContador.getBoundingClientRect().width);
+    elContador.textContent = texto;
+    elContador.style.width = '';
+    document.documentElement.style.setProperty('--contador-largura', largura + 'px');
+  }
 
   /* o cabecalho cresce quando as abas quebram em mais de uma linha;
      o slide le esta medida para nunca comecar por baixo dele */
@@ -429,6 +452,7 @@
 
     /* com muitas musicas as abas apertam e quebram em varias linhas */
     elSeletor.classList.toggle('muitas', ordem.length > 6);
+    medirContador();
     medirHud();
 
     btnMusicaProx.disabled = pos >= ordem.length - 1;
@@ -617,6 +641,7 @@
   window.addEventListener('resize', function () {
     clearTimeout(temporizador);
     temporizador = setTimeout(function () {
+      medirContador();
       medirHud();
       if (!slideAtivo) return;
       ajustarEscala(slideAtivo);

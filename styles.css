@@ -170,7 +170,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   pointer-events:none;
 }
 .hud-topo{top:0;gap:20px;align-items:flex-start}
-.contador{flex:0 0 auto;white-space:nowrap;padding-top:8px}
+/* largura travada no rotulo mais longo ("trecho X de Y"), medida pelo app.js:
+   assim o contador nao encolhe na capa e as abas nao mudam de linha a cada slide */
+.contador{flex:0 0 auto;white-space:nowrap;padding-top:8px;
+          width:var(--contador-largura,9.5em);text-align:right}
 .hud-base{bottom:0;gap:20px}
 .hud .nav{pointer-events:auto;font-size:1.1rem;opacity:.45;padding:6px 12px;border-radius:4px;transition:opacity .2s,background .2s}
 .hud .nav:hover{opacity:1;background:var(--papel)}

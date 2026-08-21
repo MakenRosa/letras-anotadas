@@ -2661,6 +2661,110 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'ja-ja-chega-dezembro',
+    titulo: 'Já, Já Chega Dezembro',
+    epigrafe: 'A única coisa que ele de fato fez está na última estrofe',
+    estrofesEsperadas: 7,
+    contexto:
+      'Esta é a primeira música da apresentação sem nenhuma referência externa: não há nome, filme, ' +
+      'livro nem citação para identificar. Tudo o que ela diz, diz com as próprias palavras — então as ' +
+      'notas aqui trabalham sobre a estrutura e sobre o argumento, não sobre o que está sendo citado. ' +
+      'E há um argumento: a letra parte de um desejo, chega a uma tese sobre o tempo, duvida do próprio ' +
+      'trabalho de escrever música, vira-se para quem escuta e termina com um fato. Repare também que ' +
+      'quase tudo está no futuro, no imperativo ou em pergunta — a única ação concluída da música ' +
+      'inteira aparece na última estrofe, e contradiz o que ele havia pedido no começo.',
+
+    trechos: [
+      {
+        rotulo: 'Se Deus quiser',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A fórmula usada ao contrário',
+            texto: '"Se Deus quiser" serve normalmente para pedir que algo bom aconteça. Aqui abre um pedido para nunca mais encontrar alguém. A música começa emprestando o tom de quem reza e usando-o para o oposto disso.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Ruas voltando a ser ruas',
+            texto: 'O pedido não é esquecer a pessoa: é que os lugares parem de significar alguma coisa. Ele quer as ruas de volta como eram antes — sem lembrança grudada nelas.' },
+          { linhas: [4, 4], cor: 2, titulo: 'Para onde vai o que sobra',
+            texto: 'O verso resolve o problema mandando as coisas ruins para cima, e o céu é azul, não carregado. É a única imagem tranquila da estrofe, e serve para mostrar como ele gostaria que fosse — sem confronto e sem esforço.' }
+        ]
+      },
+
+      {
+        rotulo: 'Fechar os olhos',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O apagamento em um gesto',
+            texto: 'Fechar e abrir os olhos é o menor gesto possível, e ele pede que isso baste para a pessoa não estar mais ali. A dimensão do desejo e o tamanho do gesto não combinam, e é isso que dá o tom da estrofe.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A ressalva',
+            texto: 'Ele não pede para perder todas as lembranças: pede para perder só as que levam a ela. É um pedido feito com cuidado, como quem tenta preservar o resto — e é impossível de cumprir exatamente por isso.' },
+          { linhas: [4, 4], cor: 2, titulo: 'O verso que muda de lado',
+            texto: 'Depois de quatro versos pedindo para apagá-la, o último pede que o jardim dela não tenha mais espinho. Ou seja: ele deseja o bem dela na mesma frase em que pede para nunca mais vê-la. É a informação mais importante da estrofe, e vem no fim, sem aviso.' }
+        ]
+      },
+
+      {
+        rotulo: 'O que ele entendeu',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A demora',
+            texto: 'O verso admite que a conclusão custou a chegar, e é o que autoriza o resto: o que vem a seguir não é dito como opinião, é dito como coisa aprendida.' },
+          { linhas: [1, 1], cor: 1, titulo: 'A tese',
+            texto: 'A afirmação é geral e não fala dela: tudo que dá alegria estraga com o tempo. A música toda vai se apoiar nisso, inclusive quando mudar de assunto.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Machucado, ferida, cicatriz',
+            texto: 'As três palavras estão em ordem crescente de gravidade, mas a última é justamente a que não dói — cicatriz é o estágio em que já sarou. A sequência termina no que fica, não no que machuca, e é essa troca que resume a estrofe.' }
+        ]
+      },
+
+      {
+        rotulo: 'As músicas',
+        estrofes: [3],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Ele desconta das próprias músicas',
+            texto: 'No mesmo balanço em que conta as pessoas perdidas, ele conta as músicas que escreveu e as chama de ruins. A canção que estamos ouvindo está dentro dessa conta — a estrofe questiona o valor do que ela mesma é.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Amor e ódio',
+            texto: 'A finalidade que ele atribui às próprias músicas é convencer os outros de uma tese só: amor e ódio são a mesma coisa. É a segunda afirmação geral da letra, e vem com a mesma palavra que ele usou para julgar as músicas.' },
+          { linhas: [4, 4], cor: 2, titulo: 'A condição',
+            texto: 'O verso diz que basta querer entender como ele entendeu. É a frase mais fechada da música: ela não convida ao acordo, informa que já existe uma resposta certa e que ela é a dele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Eu entendi',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A frase reduzida ao verbo',
+            texto: 'A estrofe é o verbo das duas estrofes anteriores repetido sozinho, sem complemento. Depois de dizer o que entendeu e por que, o que sobra é só a afirmação de que entendeu.' },
+          { linhas: [2, 2], cor: 2, titulo: 'A estrofe não termina',
+            texto: 'A terceira repetição acaba num "que" solto, que não fecha frase nenhuma. É a única emenda da música: esta estrofe e a seguinte são um período só, e é por isso que o refrão do título chega sem preparo.' }
+        ]
+      },
+
+      {
+        rotulo: 'Já chega dezembro',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A prova é o calendário',
+            texto: 'Para sustentar que tudo é temporário, ele não recorre a nenhuma imagem: usa o ano. Janeiro passa, dezembro chega, e o argumento inteiro cabe no fato de que os meses acabam. É o verso que dá título à música.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Ele passa a falar com quem ouve',
+            texto: 'A música deixa de falar do caso dele e se dirige a quem escuta, afirmando que essa pessoa sente falta de alguém. E abre a possibilidade nos dois gêneros, "ela ou ele" — a frase é montada para servir a qualquer ouvinte.' },
+          { linhas: [4, 4], cor: 2, titulo: 'A pergunta que fica sem resposta',
+            texto: 'A última pergunta é se a falta é recíproca ou se só um dos dois a carrega. A música não responde, e é a única pergunta que ela deixa em aberto — o que vem depois é ação, não resposta.' }
+        ]
+      },
+
+      {
+        rotulo: 'Eu queimei',
+        estrofes: [6],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'O único fato da música',
+            texto: 'É o primeiro e único verbo no passado com ação concluída. E contradiz a segunda estrofe: lá ele pedia que as lembranças se desintegrassem sozinhas, e aqui ele diz que destruiu os objetos com as próprias mãos. Não esperou, e o pedido educado do começo já era desnecessário.' },
+          { linhas: [1, 3], cor: 2, titulo: 'Quatro vezes',
+            texto: 'O verso vem quatro vezes seguidas e a música acaba nele, sem nada depois. Queimar as coisas de alguém não apaga a lembrança da pessoa, e a repetição funciona como o que sobra depois de fazer isso: a frase continua sendo dita porque não resolveu nada.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

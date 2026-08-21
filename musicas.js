@@ -2517,7 +2517,7 @@ window.MUSICAS = [
           { linhas: [2, 2], cor: 1, titulo: 'Crowley e Marilyn Manson',
             texto: 'Aleister Crowley foi um ocultista inglês (1875–1947), fundador de uma doutrina própria e figura de referência no esoterismo do século XX. Marilyn Manson é músico americano cujo nome de palco junta Marilyn Monroe e Charles Manson — o mesmo Manson que aparece na lista de "Vermelho Vibrante", nesta apresentação.' },
           { linhas: [3, 3], cor: 2, titulo: 'O Inferno de Dante',
-            texto: '"Inferno" é a primeira parte da "Divina Comédia", de Dante, poema do século XIV que desce por nove círculos de castigo. Aqui ele aparece impresso numa camiseta, e o verso informa a posição da estampa. A obra mais séria citada na música é a que recebe o tratamento mais casual.' }
+            texto: '"Inferno" é a primeira parte da "Divina Comédia", de Dante, poema do século XIV que desce por nove círculos de castigo. Aqui ele está tatuado no peito dela, e "estampado" é o verbo usado para a tatuagem. Isso separa este verso dos três primeiros da estrofe: vestido, tênis e cabelo se trocam, uma tatuagem não. O que a estrofe faz é começar pelo que ela veste e terminar no que ela é.' }
         ]
       },
 

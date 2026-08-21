@@ -2573,6 +2573,94 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'lucy',
+    titulo: 'Lucy',
+    epigrafe: 'Um pedido de carona para 1969',
+    estrofesEsperadas: 10,
+    contexto:
+      'É a música mais leve da apresentação, e a única construída inteira em torno de um desejo em vez ' +
+      'de um acontecimento: quase todos os verbos estão em "quero" ou no imperativo, e nada do que é ' +
+      'pedido chega a acontecer dentro da letra. As referências situam o pedido num lugar só — Janis ' +
+      'Joplin, Jimi Hendrix, a kombi e o céu de Lucy, que vem de "Lucy in the Sky with Diamonds", dos ' +
+      'Beatles, são todos da contracultura do fim dos anos 1960. Vale reparar em duas coisas de forma: ' +
+      'o vocabulário é pequeno e volta sempre — folha, horizonte e céu aparecem duas vezes cada, em ' +
+      'sentidos diferentes —, e a letra mistura gíria ("dar um rolé", "pichada") com construções ' +
+      'arcaicas ("molhe-me", "ó") sem separar as duas coisas.',
+
+    trechos: [
+      {
+        rotulo: 'O sossego',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Sossego como bagagem',
+            texto: 'O verbo é levar, não encontrar: o sossego é algo que ele já tem e carrega junto, não o que ele espera achar no destino. A viagem não é apresentada como fuga de nada.' },
+          { linhas: [2, 2], cor: 2, titulo: 'Arpejos',
+            texto: 'Arpejo é o acorde tocado nota por nota, em vez de todas juntas. É termo técnico de música, e a informação prática do verso é que ele leva um violão — a segunda coisa que entra na bagagem é o instrumento.' }
+        ]
+      },
+
+      {
+        rotulo: 'O travesseiro',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Um travesseiro improvisado',
+            texto: 'Feito à mão, com folhas secas, o que descreve dormir ao relento e não numa cama. O cenário da música está sendo montado enquanto ele fala: horizonte, chão, folha.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O que carpinteiro deixa',
+            texto: 'A frase não fecha por pouco: carpinteiro trabalha madeira e deixa lasca e serragem, não folha seca. "Folha" faz as duas coisas de uma vez — a da árvore e a que sobra de quem corta a árvore. E o material da cama é, nos dois casos, resto do trabalho de outra pessoa.' }
+        ]
+      },
+
+      {
+        rotulo: 'Janis e Jimi',
+        estrofes: [2],
+        repeticao: 'A estrofe volta inteira mais adiante',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Os dois nomes',
+            texto: 'Janis Joplin e Jimi Hendrix foram dois dos maiores nomes do rock do fim dos anos 1960, e os dois morreram em 1970, aos 27 anos, com poucas semanas de diferença. O convite é para um passeio que não tem como acontecer — e o verbo escolhido para ele é a gíria mais casual possível.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A kombi',
+            texto: 'A kombi é o veículo associado ao movimento hippie, e a mais conhecida é a que ficou registrada em Woodstock, em 1969, coberta de pintura. Aqui a pintura é chamada de pichação e os autores, de delinquentes — a mesma imagem descrita pelo vocabulário de quem a desaprova.' }
+        ]
+      },
+
+      {
+        rotulo: 'O refrão',
+        estrofes: [3],
+        repeticao: 'O refrão aparece quatro vezes ao longo da música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O destino',
+            texto: 'Onde o Sol se põe é o oeste, e é também o fim do dia: o lugar combinado é uma direção e um horário ao mesmo tempo. É o segundo convite da música, e o primeiro dirigido a alguém que existe.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O pedido à chuva',
+            texto: 'O verso fala com a chuva, não com a pessoa, e usa uma forma verbal antiga ao lado das gírias da estrofe anterior. A chuva é pedida como quem pede que regue uma planta — e, nessa frase, quem precisa ser regado é ele.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O céu incolor',
+            texto: 'O último verso diz qual é o problema: o céu não tem cor. Tudo o que a música pede — a viagem, a companhia, a chuva — está a serviço disso, e é o que liga o refrão às referências dos anos 1960, um período cuja marca visual é justamente a cor saturada.' }
+        ]
+      },
+
+      {
+        rotulo: 'A floresta',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A ordem muda',
+            texto: 'Depois de três estrofes de desejo e convite, aparece um imperativo repetido e um verbo de pressa. É o único momento da música em que alguém se move de fato, e é uma corrida.' },
+          { linhas: [1, 2], cor: 2, titulo: 'Folhas que gritam',
+            texto: 'A folha volta, agora com voz, e as constelações passam a desenhar o horizonte — que também volta, da primeira estrofe. A música tem poucas palavras e as reaproveita: o que era objeto de cama vira som, e o que era paisagem vira desenho no céu.' }
+        ]
+      },
+
+      {
+        rotulo: 'O céu de Lucy',
+        estrofes: [6],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'De onde vem o título',
+            texto: '"Lucy in the Sky with Diamonds" é uma canção dos Beatles de 1967, e a música pega os três elementos do título dela: Lucy, o céu e os diamantes. O verbo escolhido, porém, é invadir — o céu já pertence a outra pessoa, e a proposta é entrar sem convite.' },
+          { linhas: [1, 2], cor: 2, titulo: 'Batucar nos diamantes',
+            texto: 'Os diamantes deixam de ser enfeite e viram superfície de percussão. É o que a música faz com a referência inteira: pega a imagem pronta de 1967 e usa como material para tocar em cima. E o possessivo muda de dono no meio — passa a ser "teus", o que junta Lucy e a pessoa a quem ele fala desde o refrão.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

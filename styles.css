@@ -188,12 +188,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   padding-bottom:6px;
   pointer-events:auto;
   flex:1 1 auto;min-width:0;
-  scrollbar-width:thin;
-  scrollbar-color:var(--c1) transparent;
 }
-.seletor::-webkit-scrollbar{height:3px}
+/* barra: 2px, sem canto arredondado e sem setas nas pontas.
+   O Chrome ignora estes pseudo-elementos se scrollbar-width/color estiverem
+   definidos, entao as propriedades padrao ficam so para quem nao os suporta. */
+.seletor::-webkit-scrollbar{height:2px}
 .seletor::-webkit-scrollbar-track{background:transparent}
-.seletor::-webkit-scrollbar-thumb{background:var(--c1);border-radius:2px}
+.seletor::-webkit-scrollbar-thumb{background:var(--c1);border-radius:0}
+.seletor::-webkit-scrollbar-button{display:none;width:0;height:0}
+@supports not selector(::-webkit-scrollbar){
+  .seletor{scrollbar-width:thin;scrollbar-color:var(--c1) transparent}
+}
 .aba{
   flex:0 0 auto;
   font:600 .68rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;
@@ -208,9 +213,21 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .aba.atual{color:var(--tinta);border-color:var(--c1)}
 .aba .indice-aba{opacity:.5;margin-right:6px}
 .pontos{display:flex;gap:7px;flex:1;justify-content:center;pointer-events:auto}
-.ponto{width:22px;height:3px;border-radius:2px;background:var(--tinta-fraca);opacity:.22;transition:opacity .3s,background .3s}
+/* o traco continua com 22x3, mas a area clicavel passa a incluir o padding:
+   background-clip pinta so a caixa de conteudo e a margem negativa devolve o
+   espaco ocupado, entao nada muda visualmente */
+.ponto{
+  box-sizing:content-box;
+  width:22px;height:3px;
+  padding:10px 3px;margin:-10px -3px;
+  border-radius:2px;
+  background-color:var(--tinta-fraca);background-clip:content-box;
+  opacity:.22;transition:opacity .3s,background .3s;
+}
 .ponto.vista{opacity:.5}
-.ponto.ativo{opacity:1;background:var(--c1)}
+/* background-color, nao o atalho background: o atalho reiniciaria o
+   background-clip e a cor pintaria tambem o padding invisivel */
+.ponto.ativo{opacity:1;background-color:var(--c1)}
 .rotulo{font-weight:600;color:var(--tinta);opacity:.75}
 
 /* ---------- overlay (importar / indice / ajuda) ---------- */

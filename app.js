@@ -615,6 +615,21 @@
     }
   });
 
+  /* a roda do mouse em qualquer ponto da tela rola a faixa de titulos.
+     A pagina nao rola (body tem overflow hidden), entao a roda estaria ociosa;
+     so nao capturamos enquanto um overlay estiver aberto, porque ali o
+     conteudo pode ter rolagem propria. */
+  window.addEventListener('wheel', function (ev) {
+    if (!overlay.classList.contains('oculto')) return;
+    if (!elSeletor || elSeletor.scrollWidth <= elSeletor.clientWidth) return;
+    var passo = Math.abs(ev.deltaX) > Math.abs(ev.deltaY) ? ev.deltaX : ev.deltaY;
+    if (!passo) return;
+    if (ev.deltaMode === 1) passo *= 16;        // deltaMode em linhas
+    else if (ev.deltaMode === 2) passo *= elSeletor.clientWidth;
+    elSeletor.scrollLeft += passo;
+    ev.preventDefault();
+  }, { passive: false });
+
   var temporizador;
   window.addEventListener('resize', function () {
     clearTimeout(temporizador);

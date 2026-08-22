@@ -3376,6 +3376,84 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'lana',
+    titulo: 'Lana',
+    epigrafe: 'Como ele não consegue explicar a paixão, conclui que ela é bruxa',
+    estrofesEsperadas: 9,
+    contexto:
+      'A música tem uma piada só, e ela sustenta a letra inteira: como ele não consegue explicar por ' +
+      'que está apaixonado, decide que a explicação é sobrenatural. Poder, dom, relógio hipnótico e ' +
+      'poção aparecem todos como causa de algo que, na prática, é uma paixão comum por uma pessoa de ' +
+      'jaqueta jeans. A segunda piada está no fim de cada refrão, quando o elogio desaba num ' +
+      'understatement. Vale reparar na estrutura: são nove estrofes e apenas quatro diferentes — a ' +
+      'música toca duas vezes o mesmo bloco e termina esvaziando. E o nome do título não aparece em ' +
+      'verso nenhum: diferente de "Lucy", nesta mesma apresentação, onde os versos entregam a ' +
+      'referência, aqui a letra não dá nada além do nome.',
+
+    trechos: [
+      {
+        rotulo: 'O poder',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A pupila é o detalhe verdadeiro',
+            texto: 'Numa estrofe que atribui tudo a um poder, o único sintoma descrito é real: a pupila dilata mesmo diante de quem se acha atraente. Ele nomeia a reação certa e dá a ela a causa errada — é o método da música inteira, e ele compara os próprios olhos a bala de doce.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O elogio de fórmula',
+            texto: 'Comparar o brilho de uma joia com o brilho do sorriso é o elogio mais convencional que existe. O verso está ali sem ironia nenhuma, cercado por versos sobre feitiçaria — a letra alterna o mágico e o batido sem separar os dois.' },
+          { linhas: [3, 3], cor: 2, titulo: 'Woodstock',
+            texto: 'Woodstock foi o festival de 1969 que virou símbolo da contracultura, e é o mesmo evento evocado por "Lucy" nesta apresentação. Aqui ele não descreve um lugar nem uma época: descreve o jeito de dançar dela, ou seja, usa um festival inteiro como adjetivo.' }
+        ]
+      },
+
+      {
+        rotulo: 'O dom',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O relógio hipnótico',
+            texto: 'Relógio de bolso balançando é a imagem clássica da hipnose. A letra a usa com uma correção importante: o relógio dela não foi feito para os olhos, foi feito para o coração dele — o efeito descrito não é perder a consciência, é ficar preso.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A poção',
+            texto: 'Ele admite que a fixação é inexplicável e, na frase seguinte, oferece uma explicação: alguém deve ter lhe dado de beber. É a conclusão de quem não encontra motivo — e "parece que" indica que nem ele acredita, só não tem hipótese melhor.' }
+        ]
+      },
+
+      {
+        rotulo: 'Traz pra mim',
+        estrofes: [2],
+        repeticao: 'O bloco se repete logo em seguida sem o pedido inicial, e os dois voltam na segunda metade',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O que ele pede que ela traga',
+            texto: 'O pedido é por coisas que não são objetos: o jeito de odiar o mundo, a banda preferida, a ideia que ela faz do futuro. Ele quer o repertório dela, não a companhia — e é a mesma construção que abre "Future Love" nesta apresentação, onde o pedido é pelo jeito de pensar.' },
+          { linhas: [2, 2], cor: 1, titulo: 'A roupa',
+            texto: 'Jaqueta jeans e tênis vermelhos, com "rubros" no lugar de vermelhos — uma palavra literária encaixada entre duas peças de roupa comuns. O inventário de vestuário como elogio é o mesmo recurso de "Morgana", e aqui ele serve para dizer que as duas peças combinam, o que é um elogio bem modesto.' },
+          { linhas: [3, 3], cor: 2, titulo: 'A frase que desmonta o resto',
+            texto: 'Depois de poder, dom e poção, o fecho é que ela é má e que ele aguenta. "Aturar" é o verbo de quem tolera, não de quem admira — e é essa queda de registro, do sobrenatural para o suportável, que dá a graça da música.' }
+        ]
+      },
+
+      {
+        rotulo: 'Sem o pedido',
+        estrofes: [3],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'O que sumiu',
+            texto: 'A estrofe repete a anterior sem as três primeiras palavras. Sem o pedido, a mesma lista deixa de ser o que ele quer receber e passa a ser apenas a descrição do que ela é.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O bordão de novo',
+            texto: 'O verso final se mantém intacto nas quatro vezes em que o bloco aparece. É a única frase da música que nunca muda, e é justamente a que diz menos coisa boa.' }
+        ]
+      },
+
+      {
+        rotulo: 'O que sobra',
+        estrofes: [8],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Entre parênteses',
+            texto: 'A música termina repetindo só a segunda metade do último verso, e entre parênteses — marca de voz de fundo, dita mais baixo. Some o elogio, some a acusação, e fica apenas a parte em que ele diz que aguenta.' },
+          { linhas: [2, 2], cor: 2, titulo: 'Onde a música para',
+            texto: 'Depois de duas voltas inteiras sem mudar nada, o desfecho não é uma conclusão: é a frase mais morna da letra, dita três vezes até acabar. A música sobre um feitiço irresistível termina em tolerância.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

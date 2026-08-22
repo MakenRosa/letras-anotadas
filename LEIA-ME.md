@@ -104,5 +104,5 @@ e descomente esta linha no `index.html`:
 <script src="letras.local.js"></script>
 ```
 
-O conteúdo desse arquivo tem prioridade sobre o que foi colado na tela, e a página
-deixa de pedir a letra.
+O conteúdo desse arquivo tem prioridade sobre o que foi colado na tela, e as músicas
+que estiverem nele abrem direto na apresentação, sem passar pelo campo de colar.

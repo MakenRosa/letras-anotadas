@@ -3131,6 +3131,91 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'future-love',
+    titulo: 'Future Love',
+    epigrafe: 'Oferece o universo inteiro e um pastel com café',
+    estrofesEsperadas: 4,
+    contexto:
+      'Uma música de convite, no mesmo espírito de "Lucy" nesta apresentação: tudo o que ela diz é ' +
+      'oferta, e nada chega a acontecer. A estrutura é simples e vale reparar nela — são duas metades ' +
+      'idênticas, e a única diferença entre elas é uma palavra de três letras no primeiro verso. ' +
+      'Dentro de cada metade, as ofertas vêm em pares montados sobre o mesmo molde: um lugar ' +
+      'grandioso ou um ano; primeiro o passado, depois o futuro. E o padrão que organiza a letra é ' +
+      'esse: toda vez que a oferta é enorme — as pirâmides, Saturno —, a alternativa oferecida no ' +
+      'mesmo fôlego é pequena e caseira. Os dois únicos personagens com nome na música são um homem ' +
+      'numa barraca e um humanoide do ano 3000, e os dois têm nome comum de brasileiro.',
+
+    trechos: [
+      {
+        rotulo: 'O convite',
+        estrofes: [0],
+        versos: [0, 3],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: '"Traz o meu jeito de pensar"',
+            texto: 'O pedido é estranho de propósito: ele convida a pessoa a trazer o jeito de pensar dele, não o dela. O que ele oferece nos versos seguintes só funciona para quem aceitar imaginar do mesmo jeito — e a segunda metade da música vai corrigir exatamente esta palavra.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A Lua entra duas vezes',
+            texto: 'Iluminar o casal é o uso mais comum que a Lua tem numa canção de amor. Mas ela também é o primeiro destino de qualquer viagem espacial, e é por aí que a música passa do romance para a ficção científica — sem trocar de assunto, só de sentido para o mesmo objeto. O verso seguinte não acrescenta nada: repete "nós dois" sozinho.' }
+        ]
+      },
+
+      {
+        rotulo: 'O carro voador',
+        estrofes: [0],
+        versos: [4, 9],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A imagem padrão de futuro',
+            texto: 'Carro voador é o símbolo mais batido do que se imaginava para o futuro no século XX. A música o usa sem ironia e para uma função banal: entregar. Ele não vai a lugar nenhum com o carro, só traz uma coisa.' },
+          { linhas: [2, 2], cor: 1, titulo: '"No caso é eu"',
+            texto: 'Um aparte explicando quem é o sujeito da frase anterior — informação que ninguém pediu e que já estava clara. É uma correção falada no meio do verso, e é ela que dá o tom da música: a grandiosidade é sempre interrompida por alguém falando normal.' },
+          { linhas: [3, 5], cor: 2, titulo: 'As flores são de outro jardim',
+            texto: 'Ele entrega flores e admite, no verso seguinte, que o jardim não é dele. O terceiro verso resolve a questão: a civilização dona do jardim já acabou. Ou seja, a viagem no tempo serve aqui para uma coisa bem pequena — pegar flores sem que sobre alguém para reclamar.' }
+        ]
+      },
+
+      {
+        rotulo: 'As pirâmides e o seu Zé',
+        estrofes: [1],
+        versos: [0, 4],
+        repeticao: 'O bloco de ofertas volta inteiro na segunda metade',
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A primeira oferta',
+            texto: 'As pirâmides são o destino de passado mais reconhecível que existe, e a oferta vem com "se tu quiser" — ele propõe, não decide. Esse "se tu quiser" vai se repetir e é o que mantém a música em modo de convite do começo ao fim.' },
+          { linhas: [1, 1], cor: 1, titulo: 'O ano 2000',
+            texto: 'A alternativa às pirâmides não é outro lugar: é um ano recente, dentro da vida de quem ouve. Voltar ao ano 2000 não é arqueologia, é saudade — e a música coloca as duas coisas como opções equivalentes.' },
+          { linhas: [2, 4], cor: 2, titulo: 'O que tem no ano 2000',
+            texto: 'Caldo de cana, pastel e café numa barraca, com o dono chamado pelo nome. É a parte mais concreta da letra inteira, e ela foi colocada logo depois do monumento mais famoso do mundo, como se as duas valessem o mesmo. É essa comparação que a música está fazendo.' }
+        ]
+      },
+
+      {
+        rotulo: 'Saturno e o André',
+        estrofes: [1],
+        versos: [5, 11],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O par se repete, agora para frente',
+            texto: 'Mesma construção da oferta anterior, com os alvos trocados: em vez de um lugar do passado, um planeta; em vez de um ano recente, um ano distante. A letra monta as quatro opções num quadrado — lugar e tempo, para trás e para frente.' },
+          { linhas: [2, 3], cor: 1, titulo: 'O que ele promete do ano 3000',
+            texto: 'A maravilha oferecida não é tecnologia nem poder: é um humanoide que sabe quem é. O que a música apresenta como extraordinário no futuro é uma máquina com consciência de si — e o verso gasta uma linha inteira só para dizer isso.' },
+          { linhas: [4, 6], cor: 2, titulo: 'O nome',
+            texto: 'Depois de Saturno e do ano 3000, a informação guardada para o fim é o nome do humanoide, e ele é um nome comum de brasileiro — repetido sozinho no último verso. É o mesmo movimento do seu Zé: os dois extremos da linha do tempo são ocupados por sujeitos comuns, e é isso que a música acha que vale a viagem.' }
+        ]
+      },
+
+      {
+        rotulo: 'A palavra trocada',
+        estrofes: [2],
+        versos: [0, 3],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'Uma letra de diferença',
+            texto: 'A segunda metade repete a primeira inteira, e muda uma palavra só: onde antes ele pedia que ela trouxesse o jeito de pensar dele, agora pede o dela. É a única alteração na música toda.' },
+          { linhas: [1, 3], cor: 2, titulo: 'O que a troca faz',
+            texto: 'A oferta deixa de exigir que a outra pessoa imagine do jeito dele. Nada mais no texto muda — as pirâmides, o seu Zé, Saturno e o André continuam iguais —, mas passam a ser oferecidos a alguém que foi convidado a trazer a própria cabeça junto.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

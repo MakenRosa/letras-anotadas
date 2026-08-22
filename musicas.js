@@ -3216,6 +3216,166 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'dragao-de-nome-impronunciavel',
+    titulo: 'Dragão de Nome Impronunciável',
+    epigrafe: 'A batalha não tem vencedor registrado',
+    estrofesEsperadas: 12,
+    contexto:
+      'A música troca de narrador quatro vezes, e é isso que dá forma a ela. Começa com o dragão ' +
+      'falando de si; passa para as canções antigas que anunciavam um herói; volta para o dragão; ' +
+      'depois narra a batalha de fora; e termina com alguém do presente que diz ter achado a história ' +
+      'num baú e não garante que seja verdade. Essa última estrofe muda tudo o que veio antes — nada ' +
+      'ali é testemunho, é documento de origem duvidosa, e o desfecho não está registrado. Repare ' +
+      'também no vocabulário do dragão: ele se descreve em termos de astronomia, e a espada que o ' +
+      'enfrenta é solar. As notas identificam as referências e acompanham quem está falando em cada ' +
+      'trecho, porque a letra nunca avisa quando muda de boca.',
+
+    trechos: [
+      {
+        rotulo: 'O dragão se apresenta',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'Quem fala primeiro',
+            texto: 'A música abre em primeira pessoa e é o dragão quem fala — confirmando algo, como se respondesse a uma pergunta que não ouvimos. A conversa já estava em andamento quando a letra começa.' },
+          { linhas: [3, 4], cor: 2, titulo: 'A apresentação é uma negativa',
+            texto: 'Ele não diz o que é: diz que não dá para decifrar. É a primeira de várias vezes em que a música define o dragão pelo que não se consegue saber dele, e o título segue a mesma regra.' }
+        ]
+      },
+
+      {
+        rotulo: 'Nome impronunciável',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A estrela do abismo',
+            texto: 'Os dois versos descrevem algo em termos de astronomia: uma estrela vinda do abismo e um espaço que perdeu o infinito. Guarde este segundo verso — a música volta a essa ideia quatro estrofes depois, com o nome técnico dela.' },
+          { linhas: [2, 3], cor: 2, titulo: 'O nome que dá título',
+            texto: 'Nome impronunciável é motivo antigo: saber e dizer o nome de uma criatura é ter poder sobre ela, e por isso não se diz. A música mantém a regra até o fim — o dragão nunca é chamado por nome, só por "o Dragão".' }
+        ]
+      },
+
+      {
+        rotulo: 'O tesouro',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'Ele adivinha o motivo da visita',
+            texto: 'O dragão supõe que o visitante é mais um atrás do tesouro, e a palavra "mais" já informa que isso acontece com frequência. Ele trata o encontro como rotina, não como ameaça.' },
+          { linhas: [3, 4], cor: 1, titulo: 'O tesouro não é dele',
+            texto: 'A informação está dita de forma direta e é fácil passar batido: o ouro pertence aos anões. Dragão sentado em tesouro de anão é o desenho clássico da história — mas aqui é o próprio dragão quem admite, e ele não está defendendo o que é seu. Nas estrofes seguintes vários príncipes vão reivindicar aquilo, e os donos não aparecem em nenhuma delas.' }
+        ]
+      },
+
+      {
+        rotulo: 'A oferta',
+        estrofes: [3],
+        versos: [0, 3],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'O que o dragão vê',
+            texto: 'Capa, coroa, espada e uma cara de raiva — ele descreve o cavaleiro como um conjunto de objetos e uma expressão. É a mesma figura que as canções, dois trechos adiante, vão anunciar como salvador; a diferença está inteira em quem está olhando.' },
+          { linhas: [3, 3], cor: 1, titulo: 'A resposta',
+            texto: 'Depois de tudo, o que ele manda é o visitante ir para casa. A música gasta uma estrofe inteira num dragão negociando em vez de atacar.' }
+        ]
+      },
+
+      {
+        rotulo: 'Volte sem nada',
+        estrofes: [3],
+        versos: [4, 8],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'O pedágio',
+            texto: 'A vida é oferecida, mas os pertences ficam. Ou seja, ele deixa o cavaleiro sair vivo e sem nada — o dragão que guarda o tesouro dos outros acaba de cobrar mais um.' },
+          { linhas: [3, 4], cor: 2, titulo: '"Tua raça"',
+            texto: 'A expressão serve para ameaçar uma pessoa só, mas o dragão vai levá-la ao pé da letra mais adiante, quando disser que todos vão morrer por causa deste visitante. A ameaça de rua está sendo usada no sentido literal.' }
+        ]
+      },
+
+      {
+        rotulo: 'As canções',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'A música troca de boca',
+            texto: 'Sem aviso, quem fala deixa de ser o dragão: agora é o relato do que as canções antigas contavam pelas estradas. A informação chega de segunda mão, cantada — o mesmo tipo de fonte que a última estrofe vai colocar em dúvida.' },
+          { linhas: [3, 4], cor: 2, titulo: 'O que foi prometido',
+            texto: 'A promessa é de fim do mal e volta da luz, no formato mais tradicional de profecia. Repare que o herói é identificado pela roupa, não por nome nem por feito: a capa azul é tudo que as canções sabem dele.' }
+        ]
+      },
+
+      {
+        rotulo: 'A profecia',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Fala com ele e sobre ele',
+            texto: 'O primeiro verso diz "tua espada" e o segundo diz "ele fará". A estrofe está falando com o herói e a respeito dele ao mesmo tempo — é o herói ouvindo a própria lenda ser cantada, e é assim que ele fica sabendo o que deve fazer.' },
+          { linhas: [2, 3], cor: 1, titulo: 'O preço combinado',
+            texto: 'A profecia é específica: a cabeça do dragão em troca da prosperidade da terra. É o que autoriza tudo o que o cavaleiro faz — e nada nela menciona de quem é o tesouro.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os príncipes',
+        estrofes: [6, 7],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Todo mundo reivindica',
+            texto: 'De volta à voz do dragão. Os que vieram antes chegaram dizendo que algo ali lhes pertencia — a mesma alegação, repetida por gente diferente. A música não examina nenhuma delas, e os donos de fato continuam sem aparecer.' },
+          { linhas: [2, 3], cor: 1, titulo: 'O que aconteceu com eles',
+            texto: 'A resposta vem em três palavras e sem cena nenhuma. O dragão relata como quem informa um dado, e não há sinal de que tenha achado difícil.' },
+          { linhas: [4, 5], cor: 0, titulo: 'A estrofe se repete',
+            texto: 'A segunda estrofe é a primeira dita de novo com outras palavras: vieram, entraram, nenhum saiu. A repetição é o que dá a escala — não foi um caso, foi um hábito.' },
+          { linhas: [6, 7], cor: 2, titulo: 'Evaporar e carbonizar',
+            texto: 'Os dois verbos descrevem o mesmo fogo com precisão crescente: primeiro os corpos somem, depois viram carvão. É a única vez em que a música detalha o efeito das chamas, e ela faz isso em duas etapas.' }
+        ]
+      },
+
+      {
+        rotulo: 'Humanos',
+        estrofes: [8],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A ameaça se cumpre',
+            texto: 'Aqui "acabar com tua raça" deixa de ser expressão: o dragão diz que todos vão morrer por causa deste visitante. A conta é coletiva, e quem a provocou foi um homem só.' },
+          { linhas: [2, 3], cor: 2, titulo: 'O julgamento',
+            texto: 'Depois da sentença vem a opinião, repetida duas vezes. É o único momento em que ele fala da espécie inteira em vez de falar de quem está na frente dele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Singularidade',
+        estrofes: [9],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Imortal e dourado',
+            texto: 'Ele responde à profecia com dois fatos sobre si: não morre e tem escama de ouro. O segundo é o que importa para a batalha — a estrofe seguinte vai testar exatamente essa escama contra aquela espada.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A palavra que fecha o retrato',
+            texto: 'Singularidade quer dizer duas coisas, e as duas servem: ser único e, na física, o ponto de densidade infinita no centro de um buraco negro. É o nome técnico do que ele disse lá atrás — o espaço que perdeu o infinito. O dragão vem se descrevendo em termos de astronomia desde a segunda estrofe.' }
+        ]
+      },
+
+      {
+        rotulo: 'A batalha',
+        estrofes: [10],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'Narrada de fora',
+            texto: 'A música troca de boca outra vez e passa a contar no passado, sem tomar partido. O fogo é descrito pelo que faz com quem estiver no lugar — não com o adversário, com qualquer um.' },
+          { linhas: [3, 3], cor: 1, titulo: 'A espada ilumina',
+            texto: 'O que a espada faz não é ferir: é acender o lugar. Contra uma criatura que se descreve como abismo e buraco negro, a arma escolhida é uma fonte de luz — e o último verso da estrofe a chama de solar.' },
+          { linhas: [4, 6], cor: 2, titulo: 'Empate escrito nos versos',
+            texto: 'A luz solar contra o que engole a luz, e a escama aguenta. As duas forças são apresentadas como equivalentes na mesma estrofe, sem que nenhuma prevaleça — a batalha não é vencida aqui, e não vai ser vencida em lugar nenhum da letra.' }
+        ]
+      },
+
+      {
+        rotulo: 'O baú',
+        estrofes: [11],
+        notas: [
+          { linhas: [0, 3], cor: 0, titulo: 'O tamanho da briga',
+            texto: 'A duração é dada em terras, eras e milênios, ou seja, sem medida útil. É a maneira de dizer que ninguém acompanhou aquilo do começo ao fim.' },
+          { linhas: [4, 5], cor: 1, titulo: 'Não se sabe quem venceu',
+            texto: 'A profecia prometia a cabeça do dragão e a terra próspera. O que a música informa é que não se sabe quem era o escolhido — a única história de dragão e cavaleiro desta apresentação termina sem vencedor.' },
+          { linhas: [6, 7], cor: 2, titulo: 'De onde veio a história',
+            texto: 'Os dois últimos versos mudam tudo o que veio antes: quem canta não presenciou nada, achou o relato num baú velho e avisa que não garante. As falas do dragão, a profecia e a batalha passam a ser texto encontrado, de origem desconhecida — e essa dúvida é a última coisa que a música diz.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

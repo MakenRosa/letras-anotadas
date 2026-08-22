@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auditar análise de letra"
+  short_description: "Confere letra, sentido e factualidade"
+  default_prompt: "Use $audit-lyric-analysis para auditar a análise da música selecionada nesta aplicação."

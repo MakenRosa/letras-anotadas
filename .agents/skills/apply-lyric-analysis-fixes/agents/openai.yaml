@@ -1,0 +1,4 @@
+interface:
+  display_name: "Corrigir análise de letra"
+  short_description: "Aplica observações e publica na main"
+  default_prompt: "Use $apply-lyric-analysis-fixes para aplicar estas observações, validar e publicar as correções na branch principal."

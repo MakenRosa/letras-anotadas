@@ -20,9 +20,11 @@ letra na máquina, `musicas.js` não reconstrói música nenhuma.
 
 ## Como usar
 
-1. Abra `index.html` no navegador.
-2. Cole a letra da música pedida, com uma linha em branco entre cada estrofe.
-3. A apresentação é montada e o texto fica salvo no navegador.
+1. Abra `index.html` no navegador. A apresentação abre já montada, com todas as músicas
+   nas abas do topo — dá para navegar entre elas antes de colar qualquer letra.
+2. Numa música sem letra, o slide traz o título e um campo: cole a letra completa, com uma
+   linha em branco entre cada estrofe.
+3. Os trechos anotados daquela música aparecem na hora, e o texto fica salvo no navegador.
 
 Instruções completas, tabela de atalhos e como editar as explicações: [LEIA-ME.md](LEIA-ME.md).
 

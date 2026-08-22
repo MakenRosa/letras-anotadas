@@ -9,9 +9,15 @@ o próximo avanço troca de música com uma transição diferente.
 
 Basta abrir `index.html` no navegador (duplo clique). Não precisa de servidor.
 
-Na primeira vez a página pede a letra da música: cole o texto completo, **com uma
-linha em branco entre cada estrofe**, e clique em *Montar apresentação*. O texto
-fica salvo no seu navegador — nas próximas vezes ela abre direto na apresentação.
+A apresentação abre já montada, com todas as músicas nas abas do topo, mesmo antes de
+você colar qualquer letra. Uma música sem letra ocupa um slide só, com o título e o campo
+para colar; as outras continuam navegáveis normalmente. Não é preciso importar tudo antes
+de ver nada.
+
+Para preencher uma música, cole a letra completa **com uma linha em branco entre cada
+estrofe** e clique em *Montar apresentação*: os trechos anotados daquela música aparecem
+na hora e o texto fica salvo no seu navegador. Enquanto uma música não tem letra, nem a
+epígrafe nem a análise dela são exibidas.
 
 > Se o seu navegador bloquear armazenamento local em arquivos `file://`, use a
 > alternativa do arquivo (`letras.local.js`, descrita abaixo) ou sirva a pasta com
@@ -87,7 +93,7 @@ então dá para incluir estrofes longas sem quebrar o layout.
 1. Copie o bloco de `sinfonia-do-inferno` em `musicas.js` e troque `id`, `titulo`,
    `epigrafe`, `contexto` e `estrofesEsperadas`.
 2. Monte os `trechos` com as explicações.
-3. Recarregue a página: ela vai pedir a letra da música nova.
+3. Recarregue a página: a música nova aparece nas abas, com o campo para colar a letra.
 
 ## Guardando as letras em arquivo (opcional)
 

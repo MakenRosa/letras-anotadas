@@ -57,13 +57,12 @@
     LETRAS[id] = parsear(texto);
   }
 
-  function musicasSemLetra() {
-    return MUSICAS.filter(function (m) { return !LETRAS[m.id] || !LETRAS[m.id].length; });
-  }
-
   /* ---------------------------------------------------------- importação */
 
-  function telaImportar(musica) {
+  /* Monta o formulario de colar letra. E usado nos dois lugares: como slide da
+     propria musica (quando ela ainda nao tem letra) e dentro do overlay, para
+     substituir uma letra ja existente. */
+  function formularioImportar(musica, aoConcluir) {
     var painel = el('div', 'painel');
 
     painel.appendChild(el('h2', null, musica.titulo));
@@ -105,24 +104,43 @@
     }
 
     area.addEventListener('input', conferir);
+    /* o palco inteiro avanca no clique; aqui dentro o clique e para digitar */
+    painel.addEventListener('click', function (ev) { ev.stopPropagation(); });
     botao.addEventListener('click', function () {
       salvarLetra(musica.id, area.value);
-      proximaEtapaInicial();
+      aoConcluir(musica);
     });
 
+    painel._area = area;
+    return painel;
+  }
+
+  /* overlay: trocar a letra de uma musica que ja tem letra (tecla L) */
+  function telaImportar(musica) {
+    var painel = formularioImportar(musica, function (m) {
+      fecharOverlay();
+      reconstruir(indicePrimeiroSlide(MUSICAS.indexOf(m)));
+    });
     overlay.innerHTML = '';
     overlay.appendChild(painel);
     overlay.classList.remove('oculto');
-    area.focus();
+    painel._area.focus();
   }
 
-  function proximaEtapaInicial() {
-    var faltando = musicasSemLetra();
-    if (faltando.length) { telaImportar(faltando[0]); return; }
-    overlay.classList.add('oculto');
-    overlay.innerHTML = '';
+  /* refaz a lista de slides mantendo (ou escolhendo) a posicao atual */
+  function reconstruir(destino) {
+    var anterior = slides[atual];
     construirSlides();
-    mostrar(Math.min(atual, slides.length - 1), 0);
+    var alvo = destino;
+    if (alvo == null && anterior) {
+      alvo = slides.findIndex(function (s) {
+        return s.mi === anterior.mi && s.tipo === anterior.tipo && s.ti === anterior.ti;
+      });
+      if (alvo < 0) alvo = indicePrimeiroSlide(anterior.mi);
+    }
+    slideAtivo = null;
+    palco.innerHTML = '';
+    mostrar(Math.max(0, alvo || 0), 0);
   }
 
   /* ----------------------------------------------------------- construcao */
@@ -130,7 +148,13 @@
   function construirSlides() {
     slides = [];
     MUSICAS.forEach(function (m, mi) {
-      if (!LETRAS[m.id]) return;
+      /* sem letra, a musica entra na apresentacao mesmo assim: um slide unico
+         com o titulo e o campo para colar. Assim da para navegar entre todas
+         as musicas desde o inicio, sem ter de importar tudo antes. */
+      if (!LETRAS[m.id] || !LETRAS[m.id].length) {
+        slides.push({ tipo: 'importar', mi: mi });
+        return;
+      }
       slides.push({ tipo: 'capa', mi: mi });
       m.trechos.forEach(function (t, ti) {
         slides.push({ tipo: 'trecho', mi: mi, ti: ti });
@@ -150,6 +174,19 @@
       return [plano.slice(trecho.versos[0], trecho.versos[1] + 1)];
     }
     return blocos;
+  }
+
+  /* --------------------------------------------------- render: importar */
+
+  /* Musica ainda sem letra: no lugar do conteudo, o campo para colar. Nao
+     mostra epigrafe nem contexto — a analise so aparece com a letra no lugar. */
+  function renderImportar(musica, indiceMusica) {
+    var s = el('section', 'slide importar');
+    s.appendChild(el('div', 'faixa', 'Música ' + (indiceMusica + 1) + ' de ' + MUSICAS.length));
+    s.appendChild(formularioImportar(musica, function (m) {
+      reconstruir(indicePrimeiroSlide(MUSICAS.indexOf(m)) + 1);
+    }));
+    return s;
   }
 
   /* -------------------------------------------------------- render: capa */
@@ -333,9 +370,10 @@
     var musica = MUSICAS[info.mi];
     var trocaMusica = slideAtivo && slideAtivo._mi !== info.mi;
 
-    var novo = info.tipo === 'capa'
-      ? renderCapa(musica, info.mi)
-      : renderTrecho(musica, musica.trechos[info.ti], info.ti);
+    var novo;
+    if (info.tipo === 'importar')   novo = renderImportar(musica, info.mi);
+    else if (info.tipo === 'capa')  novo = renderCapa(musica, info.mi);
+    else                            novo = renderTrecho(musica, musica.trechos[info.ti], info.ti);
     novo._mi = info.mi;
 
     var anterior = slideAtivo;
@@ -378,9 +416,12 @@
     if (topo) document.documentElement.style.setProperty('--hud-alto', topo.offsetHeight + 'px');
   }
 
-  function indiceCapa(mi) {
-    return slides.findIndex(function (s) { return s.tipo === 'capa' && s.mi === mi; });
+  /* primeiro slide de uma musica: a capa, ou o campo de colar se ela nao
+     tiver letra ainda */
+  function indicePrimeiroSlide(mi) {
+    return slides.findIndex(function (s) { return s.mi === mi; });
   }
+  var indiceCapa = indicePrimeiroSlide;
 
   /* indices das musicas que realmente entraram na apresentacao, em ordem */
   function ordemMusicas() {
@@ -441,7 +482,7 @@
     btnMusicaAnt.disabled = pos <= 0 && info.tipo === 'capa';
 
     elPontos.innerHTML = '';
-    musica.trechos.forEach(function (t, i) {
+    (info.tipo === 'importar' ? [] : musica.trechos).forEach(function (t, i) {
       var p = el('button', 'ponto');
       p.title = t.rotulo || ('Trecho ' + (i + 1));
       if (info.tipo === 'trecho') {
@@ -483,10 +524,22 @@
 
     var lista = el('div', 'indice');
     MUSICAS.forEach(function (m, mi) {
-      if (!LETRAS[m.id]) return;
       var bloco = el('div', 'indice-musica');
       bloco.appendChild(el('h3', null, m.titulo));
       var itens = el('div', 'indice-lista');
+
+      /* sem letra: o unico destino e o proprio campo de colar */
+      if (!LETRAS[m.id] || !LETRAS[m.id].length) {
+        var colar = el('button', 'indice-item', 'Colar letra');
+        colar.addEventListener('click', function () {
+          fecharOverlay();
+          irPara(indicePrimeiroSlide(mi));
+        });
+        itens.appendChild(colar);
+        bloco.appendChild(itens);
+        lista.appendChild(bloco);
+        return;
+      }
 
       var capa = el('button', 'indice-item', 'Abertura');
       capa.addEventListener('click', function () {
@@ -576,7 +629,7 @@
     var aberto = !overlay.classList.contains('oculto');
     if (e.key === 'Escape') {
       e.preventDefault();
-      if (aberto) { if (musicasSemLetra().length === 0) fecharOverlay(); }
+      if (aberto) { fecharOverlay(); }
       else abrirIndice();
       return;
     }
@@ -609,7 +662,10 @@
         else document.documentElement.requestFullscreen();
         break;
       case 'l': case 'L':
-        telaImportar(MUSICAS[slides[atual].mi]); break;
+        if (slides[atual] && slides[atual].tipo !== 'importar') {
+          telaImportar(MUSICAS[slides[atual].mi]);
+        }
+        break;
       case '?':
         abrirAjuda(); break;
     }
@@ -644,5 +700,6 @@
   /* ---------------------------------------------------------------- start */
 
   carregarLetras();
-  proximaEtapaInicial();
+  construirSlides();
+  mostrar(0, 0);
 })();

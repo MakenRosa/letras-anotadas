@@ -2765,6 +2765,179 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'bob',
+    titulo: 'BOB',
+    epigrafe: 'Tudo o que a criança não pode dizer, quem diz é o Bob',
+    estrofesEsperadas: 16,
+    contexto:
+      'Quem narra é uma criança, e o Bob é o amigo invisível dela. A música tem duas leituras que ' +
+      'funcionam ao mesmo tempo e nunca são separadas: ou o Bob é uma entidade que tomou o quarto, ou ' +
+      'é o nome que a criança dá ao que ela mesma faz e vê. Repare no mecanismo, porque ele se repete ' +
+      'em todas as estrofes: cada coisa que o Bob diz é uma acusação concreta sobre a casa — remédio ' +
+      'para dormir, cocaína, outra família, uma arma no armário, gravidezes interrompidas —, e cada ' +
+      'coisa que o Bob faz explica uma marca física que alguém veria: vidro quebrado, risco no braço, ' +
+      'objetos religiosos destruídos. O sobrenatural é sempre a explicação oferecida para um dano que ' +
+      'já existe. E a criança só fala com a própria voz uma vez, num bordão que ela aprendeu com os ' +
+      'adultos. É o material mais pesado desta apresentação junto com os dois "Manual do Suicídio", e ' +
+      'as notas tratam disso de forma literal, sem enfeite.',
+
+    trechos: [
+      {
+        rotulo: 'Antes de começar',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Os dois versos entre parênteses',
+            texto: 'O refrão da música aparece primeiro entre parênteses, antes de a letra começar de fato. É a marca de outra voz — algo dito baixo, ou de fora da cena — e são justamente as duas frases que vão voltar em todas as estrofes seguintes.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A ordem vem do Bob',
+            texto: 'A criança não expulsa ninguém: relata que o Bob quer isso. É o primeiro exemplo do mecanismo da música inteira — o que precisa ser dito é atribuído a outra pessoa.' },
+          { linhas: [4, 4], cor: 2, titulo: 'A porta',
+            texto: 'O pedido é para nunca mais tentarem abrir a porta do quarto. Vale guardar este verso: a porta volta duas vezes na música, e da segunda vez está sendo apontada uma arma para ela.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os brinquedos',
+        estrofes: [1],
+        repeticao: 'Os dois primeiros versos são o refrão e voltam em outras estrofes',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: '"Não quer sair de mim"',
+            texto: 'A palavra é "de mim", não "daqui": o Bob está dentro da criança, e a morada que ele achou é ela. A sílaba repetida no fim do verso imita fala de criança pequena — a música mantém o registro infantil mesmo quando o assunto deixa de ser infantil.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Olhos vermelhos',
+            texto: 'Dar vida aos brinquedos é o que qualquer criança faz ao brincar. O que muda a cena é a cor dos olhos, um detalhe visual de filme de terror encaixado numa brincadeira comum.' },
+          { linhas: [4, 4], cor: 2, titulo: 'Os nomes',
+            texto: 'Os brinquedos têm nome de bicho e tratamento de respeito, do jeito que criança nomeia. É o verso mais inocente da letra, e vem imediatamente antes das duas estrofes que acusam os pais.' }
+        ]
+      },
+
+      {
+        rotulo: 'Mamãe',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A apresentação',
+            texto: 'A estrofe é montada como uma cena educada: a criança quer apresentar o amigo à mãe. O segundo verso já explica por que o amigo existe — ele aparece quando a mãe dorme, ou seja, quando não há adulto disponível.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O comprimido',
+            texto: 'A criança compara o que a mãe toma a uma bala de menta, porque é a referência que ela tem para descrever um comprimido pequeno. O que ela está relatando é um remédio para dormir de efeito forte.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O que isso significa para ela',
+            texto: 'Dizer que a mãe acorda "por pura sorte" é a maneira infantil de dizer que ela fica inconsciente e não dá para contar com ela. É a acusação inteira: durante a noite, a criança está sozinha.' }
+        ]
+      },
+
+      {
+        rotulo: 'Papai',
+        estrofes: [3],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A mesma abertura',
+            texto: 'Os dois primeiros versos são idênticos aos da estrofe da mãe. A música trata os dois pais pela mesma fórmula e troca só a acusação — o formato é de par, e o par vai se repetir mais adiante com acusações piores.' },
+          { linhas: [2, 2], cor: 1, titulo: '"Outras mamães"',
+            texto: 'A criança não tem palavra para outra família, então usa a que conhece, no plural. O que ela está dizendo é que o pai mantém outra casa escondida — e "esconde até da morte" indica que isso não deve ser sabido por ninguém.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O nariz branco',
+            texto: 'A criança descreve o que vê, não o que a coisa é: pó branco no nariz. E fecha com "algo que não pode", que é a fórmula que adulto usa para proibir criança — daqui sai o refrão das próximas estrofes.' }
+        ]
+      },
+
+      {
+        rotulo: '"Não pode, não"',
+        estrofes: [4],
+        repeticao: 'O bloco vem duas vezes seguidas aqui, e volta mais adiante',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A frase é emprestada',
+            texto: 'É a última expressão da estrofe anterior, agora sozinha. E é a única coisa na música inteira que a criança diz com a própria voz, sem atribuir ao Bob: uma repreensão de adulto, devolvida aos adultos.' },
+          { linhas: [2, 2], cor: 2, titulo: 'O que a repetição faz',
+            texto: 'Não há informação nova em nenhuma das repetições. O que elas marcam é o tamanho do que acabou de ser dito — a música para de avançar e fica batendo na mesma frase de três palavras.' }
+        ]
+      },
+
+      {
+        rotulo: 'Quem é o Bob',
+        estrofes: [6],
+        repeticao: 'Esta estrofe e a próxima voltam juntas e fecham a música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: '"Menininho corrompido"',
+            texto: 'O Bob se descreve como criança, não como monstro adulto, e o diminutivo é da mesma família de "anjinho" e "branquinho". Ou seja: quem toma conta da criança à noite é outra criança em pior estado que ela.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A luz e o vidro',
+            texto: 'A frase é uma explicação de causa: como ele se assusta quando acendem a luz, existe vidro quebrado no quarto. A criança está justificando um estrago que já está lá — é o mesmo formato de todas as coisas que o Bob faz nesta música.' }
+        ]
+      },
+
+      {
+        rotulo: 'O anjo caído',
+        estrofes: [7],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A origem que ele dá',
+            texto: 'Anjo caído é o anjo expulso do céu, figura da tradição cristã da qual vem a ideia de demônio. Dizer-se filho de um deles é a explicação que o Bob dá para si mesmo, e ela mantém o vocabulário religioso que a criança conhece.' },
+          { linhas: [1, 2], cor: 1, titulo: 'O mesmo susto',
+            texto: 'Os versos da luz voltam iguais aos da estrofe anterior, e servem de gancho: a mesma causa vai justificar um segundo estrago, diferente do primeiro.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O crucifixo invertido',
+            texto: 'Cruz de cabeça para baixo é o símbolo mais reconhecível de profanação em filme de terror. Aqui ele aparece como consequência prática de um susto — e é a imagem em que a música termina, já que estas duas estrofes voltam no fim.' }
+        ]
+      },
+
+      {
+        rotulo: 'A espingarda',
+        estrofes: [8],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O refrão volta',
+            texto: 'A música retoma os dois versos de abertura antes de cada escalada. Eles funcionam como aviso de que vem outra coisa que o Bob faz.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A arma existe',
+            texto: 'Diferente dos brinquedos, este objeto é real e a criança sabe exatamente onde fica. O verso não descreve nada sobrenatural: descreve uma arma de fogo guardada num armário de casa, ao alcance de quem mora ali.' },
+          { linhas: [4, 4], cor: 2, titulo: 'A porta, de novo',
+            texto: 'É a mesma porta do primeiro trecho, onde o pedido era só que não a abrissem. Agora há uma arma apontada para ela e a frase é dita em voz alta. A distância entre as duas cenas é o arco da música.' }
+        ]
+      },
+
+      {
+        rotulo: 'As marcas',
+        estrofes: [9],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A mesma abertura',
+            texto: 'Terceira vez que o par de versos abre uma estrofe de escalada. A partir daqui o que o Bob faz deixa de ser no quarto e passa a ser no corpo.' },
+          { linhas: [2, 2], cor: 1, titulo: 'Os riscos no braço',
+            texto: 'A criança relata que tem desenhos no braço e diz que quem os fez foi o Bob. Lido junto com o resto da música, é mais uma marca física que ganha um autor invisível — e é a única que está nela, não no cômodo.' },
+          { linhas: [3, 4], cor: 2, titulo: 'Queimar e afastar',
+            texto: 'Querubim é uma ordem de anjos, associada à guarda e à proteção. A estrofe destrói os objetos religiosos da casa e conclui que nenhuma proteção vai alcançá-la — a criança está descrevendo, com o vocabulário que tem, ficar sem socorro nenhum.' }
+        ]
+      },
+
+      {
+        rotulo: 'Mamãe, segunda vez',
+        estrofes: [10],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O par se repete',
+            texto: 'A estrofe da mãe volta com os mesmos dois primeiros versos. É a segunda rodada de acusações, e a diferença é que agora não se trata mais de descrever o que ela faz: trata-se de xingá-la e condená-la.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O xingamento',
+            texto: 'A palavra é adulta e não pertence ao vocabulário da criança — ela está repetindo algo que ouviu, e a música atribui isso ao Bob, como tudo o mais que não pode ser dito por ela.' },
+          { linhas: [3, 3], cor: 2, titulo: 'Asmodeus',
+            texto: 'Asmodeus é um demônio da tradição judaico-cristã, associado à luxúria; aparece no Livro de Tobias matando os maridos de uma mesma mulher. A escolha não é aleatória: é o demônio ligado justamente ao que a estrofe acusa.' }
+        ]
+      },
+
+      {
+        rotulo: 'Papai, segunda vez',
+        estrofes: [11],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A fórmula intacta',
+            texto: 'Os dois versos de apresentação seguem iguais desde a primeira vez. A música manteve a mesma moldura educada para quatro estrofes cujo conteúdo foi ficando cada vez mais grave.' },
+          { linhas: [2, 2], cor: 1, titulo: 'A condenação',
+            texto: 'Não há acusação nova aqui, só a sentença: ele vai para o inferno e não sai de lá. É o Bob falando no registro religioso que a música vem usando desde o anjo caído.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O último verso',
+            texto: 'É a informação mais pesada da letra, e vem sem preparo nenhum, na voz de uma criança que fala de irmãos que não chegaram a nascer. Repare que a acusação muda de alvo no meio: começa dirigida ao pai e termina sobre o que a mãe decidiu.' }
+        ]
+      },
+
+      {
+        rotulo: 'A frase encolhendo',
+        estrofes: [12],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A repetição se desfaz',
+            texto: 'O bordão volta, mas desregulado: primeiro com sobra de negativas, depois perdendo uma a cada verso. Onde antes era uma frase firme, agora é uma frase que vai encurtando.' },
+          { linhas: [2, 2], cor: 2, titulo: 'O que vem depois',
+            texto: 'O bloco seguinte tem só duas linhas, e então a música volta às estrofes de quem é o Bob e termina no crucifixo invertido. Nada se resolve: o último trecho da letra é o mesmo que já tinha aparecido no meio dela.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

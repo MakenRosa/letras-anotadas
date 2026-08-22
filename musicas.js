@@ -2938,6 +2938,105 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'tsar',
+    titulo: 'Tsar',
+    epigrafe: 'Uma carta de guerra, com o barulho medido em escala astronômica',
+    estrofesEsperadas: 7,
+    contexto:
+      'A música é uma carta de alguém que está numa guerra e escreve para quem ficou em casa. O ' +
+      'formato explica a estrutura: primeiro o que ele viu e ouviu, depois o aviso de que não volta, ' +
+      'depois o pedido de perdão, e por fim um refrão sobre o lugar onde ele está — repetido três ' +
+      'vezes seguidas, sem resposta e sem desfecho. As referências são de dois campos que a letra ' +
+      'aproxima de propósito: o astronômico (quasar) e o bélico (a bomba Tsar, os kamikazes). E há ' +
+      'uma afirmação política explícita no meio, quando a lista do que destruiu as casas inclui o ' +
+      'amor à pátria e o chama de falso. As notas identificam cada referência e mostram como a letra ' +
+      'vai invertendo as coisas do céu: as estrelas passam a arrebentar estradas, os anjos vão embora ' +
+      'e as nuvens trazem fogo.',
+
+    trechos: [
+      {
+        rotulo: 'O que ele viu',
+        estrofes: [0],
+        versos: [0, 2],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'O céu queimando',
+            texto: 'É a única das três coisas que pode ter acontecido de verdade: céu em chamas é o que se vê num bombardeio. A lista começa pelo possível para que os dois versos seguintes soem como continuação dele.' },
+          { linhas: [1, 1], cor: 1, titulo: 'O inferno gelando',
+            texto: 'Inferno congelar é uma expressão feita para dizer "nunca". Ao colocá-la como coisa vista, a letra afirma que o impossível já aconteceu — e ainda não saiu do vocabulário comum.' },
+          { linhas: [2, 2], cor: 2, titulo: 'O peixe afogando',
+            texto: 'Aqui não há expressão nem leitura possível: peixe não se afoga. A escalada termina no absurdo puro, e é assim que ele descreve o que a guerra mostrou — coisas que não deveriam existir.' }
+        ]
+      },
+
+      {
+        rotulo: 'O tsar e o quasar',
+        estrofes: [0],
+        versos: [3, 6],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Que tsar é esse',
+            texto: 'Tsar era o título dos imperadores russos, e é também o nome da Tsar Bomba, a maior arma nuclear já detonada, testada pela União Soviética em 1961. A música usa a palavra pelo som que ela produz, então o sentido em jogo é o da bomba.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O quasar',
+            texto: 'Quasar é o núcleo de uma galáxia distante que libera mais energia do que qualquer outro objeto conhecido do universo. É a coisa mais violenta que existe — e está tão longe que não faz diferença nenhuma para quem olha.' },
+          { linhas: [3, 3], cor: 2, titulo: 'A diferença',
+            texto: 'O verso resolve a comparação: o quasar é maior, mas o tsar está perto o bastante para estourar o ouvido de quem escuta. A música mede catástrofe por distância, não por tamanho — e é essa a razão de ela ser sobre uma guerra e não sobre o universo.' }
+        ]
+      },
+
+      {
+        rotulo: 'A carta',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Empoeirada antes de ser lida',
+            texto: 'A carta já chega velha, o que informa quanto tempo levou para sair de lá. E o aviso vem em forma de desculpa educada: ele não diz que morreu, diz que não volta tão cedo.' },
+          { linhas: [2, 2], cor: 1, titulo: 'A terra enlamaçada',
+            texto: 'Lama é o cenário de trincheira, e "alma selada" nela quer dizer que ele já não sai dali de nenhum jeito. É a segunda maneira de dizer a mesma coisa do verso anterior, agora sem eufemismo.' },
+          { linhas: [3, 3], cor: 2, titulo: 'As estrelas que arrebentam estradas',
+            texto: 'O que brilhava no céu agora cai e destrói o chão — é a descrição de um bombardeio noturno visto de baixo. Repare no som: as três palavras que carregam o verso começam quase iguais, e a repetição faz o verso soar como estrondo.' }
+        ]
+      },
+
+      {
+        rotulo: 'O fantasma',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O que ele espera virar',
+            texto: 'Ele avisa que está prestes a morrer e descreve o depois: continuar no mesmo lugar, andando pelo que sobrou. Não há promessa de descanso em nenhum verso — a morte, aqui, é permanecer.' },
+          { linhas: [2, 3], cor: 1, titulo: 'O que arruinou as casas',
+            texto: 'A frase continua o verso anterior e lista o que maltratou aquelas casas. A lista começa com uma causa física, as chamas, e escorrega para motivos humanos: o ódio, o amor à pátria — que a letra chama de falso —, a raiva e, por último, o gosto de ver o resultado. É a única afirmação política da música, e ela põe o patriotismo entre as causas da destruição.' }
+        ]
+      },
+
+      {
+        rotulo: 'Me perdoe',
+        estrofes: [3],
+        repeticao: 'O verso é repetido quatro vezes seguidas',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O que ele pede',
+            texto: 'Depois de descrever bombardeio, morte e ruína, o pedido é perdão — e a justificativa cabe em cinco palavras comuns. Ele não se explica nem se defende: apresenta um desejo modesto como se fosse a falta que precisa ser perdoada.' },
+          { linhas: [2, 3], cor: 2, titulo: '"Pra nós"',
+            texto: 'A frase é dita quatro vezes sem mudar nada, e sempre no plural. É a única parte da carta em que a pessoa que ficou em casa aparece dentro do que ele queria — e ele fala disso no passado.' }
+        ]
+      },
+
+      {
+        rotulo: 'As canções daqui',
+        estrofes: [4],
+        repeticao: 'A estrofe se repete três vezes seguidas e encerra a música',
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'O verso fala da própria música',
+            texto: 'Ele diz que as canções daquele lugar são diferentes — e o que estamos ouvindo é uma delas. É o único momento em que a letra comenta a si mesma, e serve de aviso do que vem nos três versos seguintes.' },
+          { linhas: [1, 1], cor: 1, titulo: 'Anjos e arcanjos',
+            texto: 'São duas das ordens da hierarquia celeste cristã. Citar as duas é uma forma de dizer que não foi um abandono qualquer: o céu inteiro virou as costas, de cima a baixo.' },
+          { linhas: [2, 2], cor: 2, titulo: 'Kamikazes',
+            texto: 'Kamikaze eram os pilotos japoneses que atacavam lançando o próprio avião contra o alvo, na Segunda Guerra, e a palavra significa "vento divino". O encaixe é exato: no verso seguinte ao dos anjos indo embora, a única coisa divina que resta no céu é um avião suicida.' },
+          { linhas: [3, 3], cor: 0, titulo: 'A inversão final',
+            texto: 'Nuvem traz chuva, chuva molha, enchente é de água. Aqui a nuvem traz fogo e o fogo alaga. É o fecho da série de inversões da música — céu que queima, inferno que gela, estrela que destrói — e é nele que a letra termina, repetido três vezes, sem resposta à carta.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

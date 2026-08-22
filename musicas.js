@@ -3047,12 +3047,14 @@ window.MUSICAS = [
     contexto:
       'Ragnarök é o fim do mundo na mitologia nórdica: a batalha em que os deuses morrem, anunciada ' +
       'de antemão e impossível de evitar. Todos os nomes da letra vêm de lá, e as notas identificam ' +
-      'cada um. Mas o que organiza a música não é a lista de referências e sim a posição de quem ' +
-      'canta: ele amaldiçoa Odin e as protetoras que deveriam guardá-lo, e amaldiçoa também Hela e ' +
-      'Loki, que estão do lado contrário. Ou seja, não é uma torcida por nenhum dos dois times do ' +
-      'Ragnarök — é alguém abandonado pelos dois, que decide atacar o céu inteiro. Repare também na ' +
-      'inversão de origem: no mito, o fim do mundo é profetizado e inevitável; aqui ele é escolhido, ' +
-      'e quem escolhe não é deus nem monstro.',
+      'cada um. A chave da música, porém, é o título — que não aparece em verso nenhum. Quem canta ' +
+      'amaldiçoa Odin e as protetoras que deveriam guardá-lo, e amaldiçoa também Hela e Loki, que ' +
+      'estão do lado contrário; declara-se a própria morte; põe fogo em Asgard e desfaz a ponte dos ' +
+      'deuses. São todos acontecimentos do Ragnarök, atribuídos a uma pessoa. Ele não está anunciando ' +
+      'o fim do mundo nem escolhendo um lado nele: ele é o fim do mundo, e é por isso que xingar os ' +
+      'dois times não é contradição — no Ragnarök morrem todos. A música tem uma virada clara: na ' +
+      'primeira metade ele pede socorro como quem está preso, e na segunda para de pedir e diz o que ' +
+      'é. O que muda entre uma e outra não é o humor, é a identidade.',
 
     trechos: [
       {
@@ -3085,7 +3087,7 @@ window.MUSICAS = [
         repeticao: 'O verso vem quatro vezes seguidas, e a estrofe volta mais adiante',
         notas: [
           { linhas: [0, 3], cor: 0, titulo: 'A conclusão da primeira metade',
-            texto: 'Depois de amaldiçoar deuses de um lado e do outro, a frase que resume é literal: todos, sem exceção. A música não está descrevendo uma disputa entre forças — está descrevendo alguém cercado por todas elas.' },
+            texto: 'Depois de amaldiçoar deuses de um lado e do outro, a frase que resume é literal: todos, sem exceção. E ela deixa de soar como exagero quando se sabe quem fala — o Ragnarök não é a vitória de um lado sobre o outro, é o fim dos dois. Estar contra todos é a descrição correta do que ele é.' },
           { linhas: [4, 4], cor: 2, titulo: '"Por isso cantaremos"',
             texto: 'A resposta ao abandono universal é cantar, e o verso está no plural e no futuro. É o único momento em que a letra explica a própria existência: a canção é o que sobrou para fazer, e o que vem depois dela é o refrão.' }
         ]
@@ -3097,7 +3099,7 @@ window.MUSICAS = [
         repeticao: 'A estrofe inteira volta no fim e encerra a música',
         notas: [
           { linhas: [0, 2], cor: 0, titulo: 'Asgard e Valhalla',
-            texto: 'Asgard é o reino dos deuses; Valhalla é o salão de Odin, para onde vão os guerreiros mortos em combate. Queimar os dois é atacar ao mesmo tempo onde os deuses moram e o lugar que serve de recompensa a quem morre por eles.' },
+            texto: 'Asgard é o reino dos deuses; Valhalla é o salão de Odin, para onde vão os guerreiros mortos em combate. Queimar os dois atinge ao mesmo tempo onde os deuses moram e a recompensa de quem morre por eles. E o fogo não é escolha de imagem: no mito, é com fogo que o gigante Surtr consome os mundos no Ragnarök. A função que a letra assume aqui já é a do fim do mundo.' },
           { linhas: [3, 3], cor: 1, titulo: 'As Valquírias',
             texto: 'São elas que escolhem quem morre na batalha e levam os escolhidos a Valhalla. Arrancar os olhos delas é atacar exatamente a função que exercem: sem enxergar, não há quem selecione — e cuspir nas asas impede o transporte.' },
           { linhas: [7, 7], cor: 2, titulo: 'Álfheim',
@@ -3123,7 +3125,7 @@ window.MUSICAS = [
           { linhas: [0, 1], cor: 0, titulo: 'O pedido aumenta',
             texto: 'Na primeira vez, ele pedia à serpente a saída do mar. Agora pede outros reinos — e chama de quintal aquilo que a mitologia nórdica trata como nove mundos inteiros. O que era pedido de fuga virou pedido de mais espaço.' },
           { linhas: [2, 3], cor: 1, titulo: 'A Bifrost',
-            texto: 'Bifrost é a ponte de arco-íris que liga o mundo dos homens ao dos deuses; no mito, ela se parte durante o Ragnarök. Aqui quem a destrói tem nome, e é quem canta — ele deixa de pedir ajuda e passa a se apresentar como a própria morte.' },
+            texto: 'Bifrost é a ponte de arco-íris que liga o mundo dos homens ao dos deuses. No mito ela se parte durante o Ragnarök — quem a quebra é o evento. Aqui quem a quebra é ele, e o verso anterior já tinha avisado: ele é a própria morte. Estes dois versos são onde a música diz quem é o narrador, e explicam o título, que não aparece em nenhum verso.' },
           { linhas: [4, 4], cor: 2, titulo: 'Heimdall',
             texto: 'Heimdall é o vigia dos deuses e o guardião da Bifrost: é ele quem soa o chifre que anuncia o fim do mundo. Prometer a cabeça dele como prêmio é escolher, antes de tudo, o alvo que daria o alarme — a estrofe descreve um plano, não uma ameaça.' }
         ]

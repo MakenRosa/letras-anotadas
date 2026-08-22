@@ -34,10 +34,12 @@ fica salvo no seu navegador — nas próximas vezes ela abre direto na apresenta
 Passar o mouse sobre uma explicação acende só os versos aos quais ela se refere.
 
 No topo da tela ficam as abas numeradas com o nome de cada música — clicar em uma vai
-direto para a abertura dela. Quando as abas não cabem na largura da tela, elas quebram
-em duas ou mais linhas e o conteúdo do slide desce junto, então nenhum título fica cortado.
-No rodapé, os botões `⏮` e `⏭` (nas pontas) pulam a música inteira, e as setas de dentro
-andam trecho por trecho.
+direto para a abertura dela. Elas ocupam uma linha só, com rolagem horizontal quando não
+cabem na largura da tela; a aba da música atual se centraliza sozinha a cada troca.
+
+No rodapé, os botões `⏮` e `⏭` (nas pontas, em vermelho) pulam a música inteira, e as setas
+de dentro andam trecho por trecho. Os tracinhos entre elas são um por trecho da música e
+também funcionam como botão: clicar em um vai direto para aquele trecho.
 
 ## Arquivos
 

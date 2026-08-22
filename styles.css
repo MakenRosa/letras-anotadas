@@ -170,23 +170,30 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   pointer-events:none;
 }
 .hud-topo{top:0;gap:20px;align-items:flex-start}
-/* largura travada no rotulo mais longo ("trecho X de Y"), medida pelo app.js:
-   assim o contador nao encolhe na capa e as abas nao mudam de linha a cada slide */
-.contador{flex:0 0 auto;white-space:nowrap;padding-top:8px;
-          width:var(--contador-largura,9.5em);text-align:right}
 .hud-base{bottom:0;gap:20px}
 .hud .nav{pointer-events:auto;font-size:1.1rem;opacity:.45;padding:6px 12px;border-radius:4px;transition:opacity .2s,background .2s}
 .hud .nav:hover{opacity:1;background:var(--papel)}
 .hud .nav[disabled]{opacity:.12;cursor:default;background:none}
+/* pular a musica inteira: mesmo destaque do trecho ativo e da aba atual */
+.hud .nav.salto{color:var(--c1);opacity:.65}
+.hud .nav.salto:hover{opacity:1}
 
 /* abas de musicas (pular sem passar pelos trechos).
-   quebram em varias linhas quando nao cabem: nada e cortado */
+   uma linha so, com rolagem horizontal: a barra fina fica logo abaixo dos
+   titulos, na cor da borda da aba atual */
 .seletor{
   display:flex;align-items:center;gap:6px;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
+  overflow-x:auto;overflow-y:hidden;
+  padding-bottom:6px;
   pointer-events:auto;
   flex:1 1 auto;min-width:0;
+  scrollbar-width:thin;
+  scrollbar-color:var(--c1) transparent;
 }
+.seletor::-webkit-scrollbar{height:3px}
+.seletor::-webkit-scrollbar-track{background:transparent}
+.seletor::-webkit-scrollbar-thumb{background:var(--c1);border-radius:2px}
 .aba{
   flex:0 0 auto;
   font:600 .68rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;

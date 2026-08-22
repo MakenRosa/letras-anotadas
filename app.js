@@ -14,7 +14,6 @@
   var palco = document.getElementById('palco');
   var overlay = document.getElementById('overlay');
   var elSeletor = document.getElementById('seletor');
-  var elContador = document.getElementById('contador');
   var elPontos = document.getElementById('pontos');
   var btnMusicaAnt = document.getElementById('btn-musica-ant');
   var btnMusicaProx = document.getElementById('btn-musica-prox');
@@ -355,7 +354,6 @@
 
     function refazerLayout() {
       if (slideAtivo !== novo || !novo.parentNode) return;
-      medirContador();
       medirHud();
       ajustarEscala(novo);
       desenharFios(novo);
@@ -372,27 +370,6 @@
   }
 
   /* ------------------------------------------------- pular entre musicas */
-
-  /* o contador alterna entre "abertura" e "trecho X de Y". Sem largura fixa ele
-     encolhe e estica a cada slide, e as abas ao lado mudam de linha junto.
-     Medimos uma vez o rotulo mais largo possivel (o maior numero de trechos
-     entre todas as musicas) e travamos essa largura. Nao da para estimar em ch:
-     a HUD tem letter-spacing e caixa alta. */
-  function medirContador() {
-    if (!elContador) return;
-    var maior = 0;
-    MUSICAS.forEach(function (m) {
-      if (m.trechos.length > maior) maior = m.trechos.length;
-    });
-    var molde = 'trecho ' + maior + ' de ' + maior;
-    var texto = elContador.textContent;
-    elContador.style.width = 'auto';
-    elContador.textContent = molde;
-    var largura = Math.ceil(elContador.getBoundingClientRect().width);
-    elContador.textContent = texto;
-    elContador.style.width = '';
-    document.documentElement.style.setProperty('--contador-largura', largura + 'px');
-  }
 
   /* o cabecalho cresce quando as abas quebram em mais de uma linha;
      o slide le esta medida para nunca comecar por baixo dele */
@@ -440,27 +417,28 @@
 
     /* abas: pulam direto para a abertura de qualquer musica */
     elSeletor.innerHTML = '';
+    var abaAtual = null;
     ordem.forEach(function (mi, i) {
       var b = el('button', 'aba');
       b.appendChild(el('span', 'indice-aba', String(i + 1)));
       b.appendChild(el('span', null, MUSICAS[mi].titulo));
       b.title = 'Ir para "' + MUSICAS[mi].titulo + '"';
-      if (mi === info.mi) b.classList.add('atual');
+      if (mi === info.mi) { b.classList.add('atual'); abaAtual = b; }
       b.addEventListener('click', function (ev) { ev.stopPropagation(); irParaMusica(i); });
       elSeletor.appendChild(b);
     });
 
-    /* com muitas musicas as abas apertam e quebram em varias linhas */
+    /* com muitas musicas as abas apertam para caber mais na linha */
     elSeletor.classList.toggle('muitas', ordem.length > 6);
-    medirContador();
+    /* linha unica com rolagem: traz a aba atual para o centro da faixa visivel */
+    if (abaAtual) {
+      var alvoScroll = abaAtual.offsetLeft - (elSeletor.clientWidth - abaAtual.offsetWidth) / 2;
+      elSeletor.scrollLeft = Math.max(0, alvoScroll);
+    }
     medirHud();
 
     btnMusicaProx.disabled = pos >= ordem.length - 1;
     btnMusicaAnt.disabled = pos <= 0 && info.tipo === 'capa';
-
-    elContador.textContent = info.tipo === 'capa'
-      ? 'abertura'
-      : 'trecho ' + (info.ti + 1) + ' de ' + musica.trechos.length;
 
     elPontos.innerHTML = '';
     musica.trechos.forEach(function (t, i) {
@@ -641,7 +619,6 @@
   window.addEventListener('resize', function () {
     clearTimeout(temporizador);
     temporizador = setTimeout(function () {
-      medirContador();
       medirHud();
       if (!slideAtivo) return;
       ajustarEscala(slideAtivo);

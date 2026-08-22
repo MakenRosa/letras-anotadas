@@ -3037,6 +3037,98 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'ragnarok',
+    titulo: 'Ragnarok',
+    epigrafe: 'Declara guerra aos dois lados do fim do mundo',
+    estrofesEsperadas: 8,
+    contexto:
+      'Ragnarök é o fim do mundo na mitologia nórdica: a batalha em que os deuses morrem, anunciada ' +
+      'de antemão e impossível de evitar. Todos os nomes da letra vêm de lá, e as notas identificam ' +
+      'cada um. Mas o que organiza a música não é a lista de referências e sim a posição de quem ' +
+      'canta: ele amaldiçoa Odin e as protetoras que deveriam guardá-lo, e amaldiçoa também Hela e ' +
+      'Loki, que estão do lado contrário. Ou seja, não é uma torcida por nenhum dos dois times do ' +
+      'Ragnarök — é alguém abandonado pelos dois, que decide atacar o céu inteiro. Repare também na ' +
+      'inversão de origem: no mito, o fim do mundo é profetizado e inevitável; aqui ele é escolhido, ' +
+      'e quem escolhe não é deus nem monstro.',
+
+    trechos: [
+      {
+        rotulo: 'Maldito seja Odin',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Odin, os corvos e o trono',
+            texto: 'Odin é o principal deus nórdico. Os dois corvos são Hugin e Munin, que voam pelo mundo e voltam para contar a ele o que viram, e o trono é aquele de onde ele enxerga todos os reinos. A primeira maldição da música é contra quem tudo vê — ou seja, contra alguém que sabia o que estava acontecendo.' },
+          { linhas: [2, 3], cor: 2, titulo: 'As Dísir',
+            texto: 'As Dísir são espíritos femininos da crença nórdica ligados ao destino e à proteção de uma família ou de um lugar. A acusação contra elas é diferente da feita a Odin: não é de crueldade, é de abandono — elas tinham a função de proteger e foram embora.' }
+        ]
+      },
+
+      {
+        rotulo: 'A serpente',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Quem é a serpente',
+            texto: 'É Jörmungandr, a serpente de Midgard, tão grande que envolve o mundo inteiro e morde o próprio rabo. Ele pede a saída justamente a ela — e o mar está entupido porque é o corpo dela que o ocupa. A ajuda é pedida ao que bloqueia o caminho.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Contra o norte',
+            texto: 'O mar corre no sentido oposto ao norte, que é a direção de referência de quem navega. Some o ponto de orientação e sobra um mar que se mexe sem levar a lugar nenhum — a situação prática que motiva o pedido.' },
+          { linhas: [4, 4], cor: 2, titulo: 'O outro lado também é amaldiçoado',
+            texto: 'Hela é a deusa que governa o mundo dos mortos, e Loki é o deus trapaceiro, pai dela — os dois estão do lado que ataca os deuses no Ragnarök. Amaldiçoá-los na mesma estrofe em que se pede ajuda à serpente mostra que quem canta não pertence a nenhum dos dois lados.' }
+        ]
+      },
+
+      {
+        rotulo: 'Todos eles',
+        estrofes: [2],
+        repeticao: 'O verso vem quatro vezes seguidas, e a estrofe volta mais adiante',
+        notas: [
+          { linhas: [0, 3], cor: 0, titulo: 'A conclusão da primeira metade',
+            texto: 'Depois de amaldiçoar deuses de um lado e do outro, a frase que resume é literal: todos, sem exceção. A música não está descrevendo uma disputa entre forças — está descrevendo alguém cercado por todas elas.' },
+          { linhas: [4, 4], cor: 2, titulo: '"Por isso cantaremos"',
+            texto: 'A resposta ao abandono universal é cantar, e o verso está no plural e no futuro. É o único momento em que a letra explica a própria existência: a canção é o que sobrou para fazer, e o que vem depois dela é o refrão.' }
+        ]
+      },
+
+      {
+        rotulo: 'Fogo em Asgard',
+        estrofes: [3],
+        repeticao: 'A estrofe inteira volta no fim e encerra a música',
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'Asgard e Valhalla',
+            texto: 'Asgard é o reino dos deuses; Valhalla é o salão de Odin, para onde vão os guerreiros mortos em combate. Queimar os dois é atacar ao mesmo tempo onde os deuses moram e o lugar que serve de recompensa a quem morre por eles.' },
+          { linhas: [3, 3], cor: 1, titulo: 'As Valquírias',
+            texto: 'São elas que escolhem quem morre na batalha e levam os escolhidos a Valhalla. Arrancar os olhos delas é atacar exatamente a função que exercem: sem enxergar, não há quem selecione — e cuspir nas asas impede o transporte.' },
+          { linhas: [7, 7], cor: 2, titulo: 'Álfheim',
+            texto: 'Álfheim é o reino dos elfos da luz, um dos nove mundos, e não tem participação nas maldições anteriores. Incluí-lo mostra que o alvo deixou de ser quem o abandonou: agora é tudo que fica acima.' }
+        ]
+      },
+
+      {
+        rotulo: 'Odin, segunda vez',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Os corvos mudaram de rota',
+            texto: 'A estrofe repete a primeira trocando poucas palavras, e a troca importa: antes os corvos eram um atributo do trono, agora voam até ele. O que era descrição virou vigilância — os informantes de Odin já sabem onde ele está.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Brokk, Eitri e o Mjölnir',
+            texto: 'Brokk e Eitri são os irmãos anões que forjaram o Mjölnir, o martelo de Thor, a arma mais poderosa dos deuses. Na versão mais conhecida do mito, quem provoca a forja é Loki, numa aposta; a letra atribui a encomenda a Odin, o que deixa a origem da principal arma divina nas mãos de quem ela vem amaldiçoando desde o primeiro verso.' }
+        ]
+      },
+
+      {
+        rotulo: 'A serpente, segunda vez',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O pedido aumenta',
+            texto: 'Na primeira vez, ele pedia à serpente a saída do mar. Agora pede outros reinos — e chama de quintal aquilo que a mitologia nórdica trata como nove mundos inteiros. O que era pedido de fuga virou pedido de mais espaço.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A Bifrost',
+            texto: 'Bifrost é a ponte de arco-íris que liga o mundo dos homens ao dos deuses; no mito, ela se parte durante o Ragnarök. Aqui quem a destrói tem nome, e é quem canta — ele deixa de pedir ajuda e passa a se apresentar como a própria morte.' },
+          { linhas: [4, 4], cor: 2, titulo: 'Heimdall',
+            texto: 'Heimdall é o vigia dos deuses e o guardião da Bifrost: é ele quem soa o chifre que anuncia o fim do mundo. Prometer a cabeça dele como prêmio é escolher, antes de tudo, o alvo que daria o alarme — a estrofe descreve um plano, não uma ameaça.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

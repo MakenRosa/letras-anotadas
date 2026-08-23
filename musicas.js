@@ -3829,6 +3829,259 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'a-historia-de-jhonny',
+    titulo: 'A História de Jhonny',
+    epigrafe: 'O nome vem de Chuck Berry, e a história é o contrário da dele',
+    estrofesEsperadas: 30,
+    contexto:
+      'É a música mais longa da apresentação e a única contada como espetáculo: alguém abre anunciando ' +
+      'o número, fala com a plateia, comenta o que está narrando e no fim garante a competência do ' +
+      'personagem. Vale separar duas vozes, porque a letra as mistura o tempo todo — a de quem conta a ' +
+      'história para nós e a que fala diretamente com o Jhonny, primeiro pedindo que ele se contenha e ' +
+      'depois mandando que ele volte. O nome do personagem não é acaso: vem de "Johnny B. Goode", de ' +
+      'Chuck Berry, e a música cita o próprio Chuck Berry tocando durante as cenas. Sobre o assunto: o ' +
+      'que a letra narra é uma criança destruída pelo abandono e depois transformada em atração, e as ' +
+      'notas tratam disso de forma literal — inclusive apontando os momentos em que quem narra acha ' +
+      'graça.',
+
+    trechos: [
+      {
+        rotulo: 'A apresentação',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Alguém anuncia o número',
+            texto: 'A música começa fora da história, com um apresentador dizendo o título e o nome do personagem. Antes de qualquer verso cantado, já está estabelecido que aquilo é um espetáculo com plateia.' },
+          { linhas: [2, 3], cor: 2, titulo: '"A vida dele não foi tão fácil"',
+            texto: 'O aviso é dado em tom leve, como quem prepara um causo. É o primeiro sinal do descompasso que atravessa a letra: o assunto é grave e quem conta está entretido.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os pais',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A situação em dois versos',
+            texto: 'Pai alcoolizado e mãe usando outras substâncias — a letra apresenta os dois em paralelo, com a mesma construção, e não gasta nenhuma linha explicando como chegaram ali.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Onde cada um trabalha',
+            texto: 'O pai num boteco, a mãe numa boate. O verso seguinte descreve o que ela faz lá por insinuação, dizendo que é muito amada — a música evita nomear e o sentido fica claro assim mesmo.' },
+          { linhas: [4, 4], cor: 2, titulo: 'O aparte',
+            texto: 'A frase é dirigida a quem escuta, entre parênteses, e não acrescenta informação nenhuma: só reforça que a plateia deveria estar impressionada. É o apresentador aparecendo no meio da história.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os irmãos',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Quatro nomes',
+            texto: 'Três deles vêm no diminutivo comum brasileiro e o quarto não. Essa diferença é a primeira pista sobre o Ramon, que vai ganhar a estrofe seguinte inteira. Repare também que a letra diz "teus quatro irmãos" enquanto narra em terceira pessoa: quem conta está falando com o Jhonny e sobre ele ao mesmo tempo, e isso acontece do começo ao fim.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Onde eles estão',
+            texto: 'Dois na prisão e um bebê que ainda engatinha. Em dois versos a letra estabelece o que sobra para o Jhonny: nenhum irmão mais velho disponível e um menor sob a responsabilidade dele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Ramon',
+        estrofes: [3],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O pior da lista',
+            texto: 'A letra julga, e escolhe o irmão que foi embora como o pior de todos — pior que o pai e que a mãe, que já foram descritos. O motivo apresentado é que o sonho dele valeu mais do que criar os irmãos.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Ele conseguiu',
+            texto: 'Levou o dinheiro dos três irmãos, pagou a passagem e hoje é cirurgião. É a única pessoa da música que escapou, e escapou roubando de quem ficou. A letra não diz que ele se arrependeu nem que se deu mal — informa a profissão e passa adiante.' }
+        ]
+      },
+
+      {
+        rotulo: 'O internato',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Crescer antes da hora',
+            texto: 'A explicação é dada sem rodeio: ele teve de crescer mais rápido. "Lunático" é a palavra que a letra escolhe para descrevê-lo já aqui, antes de qualquer coisa acontecer.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Descalço, tocando a campainha',
+            texto: 'A caminhada até o internato é feita a pé e sem sapato, e o gesto final é tocar a campainha — ou seja, foi ele quem procurou o lugar, ninguém o levou. Uma criança entregando a si mesma e ao irmão bebê a uma instituição.' }
+        ]
+      },
+
+      {
+        rotulo: 'A voz que pede',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Alguém fala com ele',
+            texto: 'Surge uma segunda voz, que se dirige ao Jhonny e tenta convencê-lo de que o internato é bom para o irmão. Não é a voz que narra para a plateia: essa fala com o menino, e vai reaparecer nos momentos decisivos.' },
+          { linhas: [2, 3], cor: 2, titulo: 'O pedido',
+            texto: 'O que ela pede é que ele não enlouqueça, e em seguida reconhece que a cabeça dele deve estar um furacão. É um pedido e um diagnóstico na mesma estrofe — ela sabe que está pedindo o que ele não tem como cumprir.' }
+        ]
+      },
+
+      {
+        rotulo: 'Amélia',
+        estrofes: [6, 7],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A chegada',
+            texto: 'Ele é recebido por uma moça descrita por dois detalhes, olhos claros e cachos dourados. Guarde os dois: são exatamente os mesmos que vão descrevê-la quando ela reaparecer no fim da música.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A fome do bebê',
+            texto: 'O irmão menor entra chorando de fome, e é isso que justifica o internato. A instituição resolve, por ora, o único problema que o Jhonny não conseguia resolver sozinho.' },
+          { linhas: [4, 5], cor: 2, titulo: 'O nome é falso',
+            texto: 'Quem narra duvida do nome e supõe que seja apelido para manter o anonimato. Mais uma vez o assunto é nomear: o personagem que cuida das crianças esconde quem é.' },
+          { linhas: [6, 7], cor: 0, titulo: 'O que o nome verdadeiro traria',
+            texto: 'A frase é obscura de propósito e admite mais de uma leitura, mas o que ela informa é que saber o nome real dela traria perturbação — a comparação usada é com quem está preso. A música deixa a suspeita no ar e nunca volta a ela.' }
+        ]
+      },
+
+      {
+        rotulo: 'O que o lugar fez',
+        estrofes: [8],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A descrição do internato',
+            texto: 'O lugar é apresentado como bonito e péssimo na mesma frase, cheio de gente perturbada. Não há nenhum verso sobre cuidado, aula ou tratamento.' },
+          { linhas: [2, 2], cor: 1, titulo: 'O verbo que explica a música',
+            texto: '"Alimentou a mente" é o ponto de virada da história inteira. O internato não acalma o Jhonny: dá a ele a lista completa da própria situação, e é essa lista que vem nos três versos seguintes.' },
+          { linhas: [3, 5], cor: 2, titulo: 'O inventário do abandono',
+            texto: 'Irmãos presos, pai indiferente, irmão que fugiu e os deixou com fome, mãe na boate. São os fatos que já tínhamos ouvido, agora enfileirados de uma vez só, na cabeça de uma criança. A música está mostrando o momento em que ele soma tudo.' }
+        ]
+      },
+
+      {
+        rotulo: 'Não pule o muro',
+        estrofes: [9, 10],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'Os pedidos ficam específicos',
+            texto: 'A voz que fala com ele volta, e agora pede coisas concretas: que ele não enforque os amiguinhos e largue os delírios. O pedido só faz sentido se aquilo já estiver acontecendo — é assim que ficamos sabendo.' },
+          { linhas: [3, 5], cor: 2, titulo: 'O último pedido',
+            texto: 'Ela reconhece que a situação é um absurdo e mesmo assim pede controle, terminando com um "por favor". O muro é a última coisa que ela tenta impedir, e a estrofe seguinte começa com ele pulando o muro.' }
+        ]
+      },
+
+      {
+        rotulo: 'O revólver',
+        estrofes: [11],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Pula e volta',
+            texto: 'O pedido do trecho anterior é negado imediatamente. Ele volta para casa, e a palavra usada duas vezes seguidas para descrevê-lo é revoltado.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A arma estava em casa',
+            texto: 'Ele entra pela janela e pega o revólver do pai no armário — ele sabia onde estava. A arma que vai organizar todo o resto da música pertencia ao adulto responsável e ficava ao alcance de uma criança.' }
+        ]
+      },
+
+      {
+        rotulo: 'O primeiro tiro',
+        estrofes: [12],
+        repeticao: 'A estrofe volta mais adiante, junto com o refrão',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: '"Jhonny escuta Jhonny"',
+            texto: 'O verso tem duas leituras e as duas funcionam: ele está ouvindo a canção "Johnny B. Goode", de Chuck Berry, em volume alto — o refrão vai confirmar isso —, e está ouvindo a si mesmo. A música fez o nome do personagem coincidir com o nome da música que toca.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A arma apontada para cima',
+            texto: 'O primeiro disparo não é contra ninguém: é para o alto. Ele não mata aqui — faz barulho. E é esse barulho que vai trazer o pai até o quarto, duas estrofes adiante.' }
+        ]
+      },
+
+      {
+        rotulo: 'Jhonny Boy',
+        estrofes: [13],
+        repeticao: 'O refrão volta duas vezes e encerra a música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A classificação',
+            texto: 'O refrão dá ao personagem um rótulo técnico, de notícia policial, e o aplica a um menino. É a única definição que a música oferece dele, e ela é repetida quatro vezes por refrão.' },
+          { linhas: [3, 3], cor: 1, titulo: 'Chuck Berry',
+            texto: 'Chuck Berry foi um dos fundadores do rock and roll, e a canção dele mais conhecida é "Johnny B. Goode", de 1958 — a história de um garoto pobre do interior que aprende a tocar guitarra e fica famoso. É o maior conto de fadas do rock americano, e o nome do personagem desta música vem de lá. A inversão é exata: o outro Johnny sobe na vida tocando; este ouve a canção enquanto usa a arma do pai.' },
+          { linhas: [7, 7], cor: 2, titulo: '"Eu garanto que ele é mestre"',
+            texto: 'Quem narra não descreve nem condena: recomenda. O verso oferece à plateia uma garantia de qualidade sobre a habilidade de um menino em matar, e é assim que cada refrão termina. Se algum verso da música precisa ser lido com atenção ao tom, é este.' }
+        ]
+      },
+
+      {
+        rotulo: 'O pai',
+        estrofes: [15, 16],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O que ele estava fazendo',
+            texto: 'Assistindo beisebol, embriagado, com a garrafa na mão. Uma fala de narração antes desta estrofe já tinha avisado que ele achava que o Jhonny havia fugido de casa — ou seja, ele não sabia que o filho estava lá dentro.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A música na rua toda',
+            texto: 'O volume é tão alto que se ouve da rua. O detalhe importa por dois motivos: explica por que ninguém ouviu nada antes, e coloca Chuck Berry tocando durante a cena inteira que vem a seguir.' },
+          { linhas: [5, 7], cor: 2, titulo: '"Eu não tô louco"',
+            texto: 'A primeira coisa que o pai diz é que não está louco, defendendo-se de uma acusação que ninguém fez. Em seguida a letra o descreve três vezes com palavras de loucura, nos versos seguintes. Ele nega exatamente aquilo que a narração afirma dele.' },
+          { linhas: [8, 10], cor: 0, titulo: 'A porta',
+            texto: 'Ele esmurra, xinga e arrebenta. A estrofe gasta seis linhas na aproximação de um homem bêbado até a porta de um quarto onde há uma criança armada, e para exatamente no momento em que a porta cede.' }
+        ]
+      },
+
+      {
+        rotulo: 'O tiro',
+        estrofes: [17],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'As duas frases',
+            texto: 'A letra descreve o que o Jhonny tem na mão sem nomear, e a fala do pai é uma ordem para largar. É a última coisa que ele diz na música.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Como a letra explica',
+            texto: 'A explicação dada é a raiva subindo, e a morte é contada com uma onomatopeia e uma piada sobre o destino dele. O acontecimento central da história ocupa meio verso — a música gastou seis linhas na porta e duas palavras no disparo.' }
+        ]
+      },
+
+      {
+        rotulo: 'A mãe',
+        estrofes: [18],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Ele vai avisar',
+            texto: 'Depois do disparo, o primeiro lugar aonde ele vai é a boate onde a mãe trabalha. Não é fuga nem esconderijo: é dar uma notícia.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Apresentado como favor',
+            texto: 'A frase é um convite para ela voltar para casa, agora que o pai não está mais lá. Ele trata o que fez como solução de um problema dela — é o único ato da música que o personagem apresenta como gentileza.' }
+        ]
+      },
+
+      {
+        rotulo: 'Encontre o João',
+        estrofes: [19],
+        repeticao: 'O bloco vem três vezes seguidas',
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A voz mudou de função',
+            texto: 'É a mesma voz que pedia para ele não pular o muro. Agora ela manda ele voltar ao internato — ou seja, deixou de tentar contê-lo e passou a dar instruções. A única coisa que ela pede desta vez é que ele vá buscar o irmão.' },
+          { linhas: [1, 2], cor: 2, titulo: '"Não deixe ele com os ratos"',
+            texto: 'O internato, que na quinta estrofe era descrito como o melhor para o irmão, agora é um lugar com ratos. A avaliação do mesmo lugar se inverteu, e é essa inversão que autoriza a volta.' }
+        ]
+      },
+
+      {
+        rotulo: 'De volta ao internato',
+        estrofes: [22, 23],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O estado dele',
+            texto: '"Punitivo" é a palavra exata do que ele foi fazer: aplicar castigo. E "mente ao contrário" é a forma que a letra encontra para dizer que ele inverteu quem merece o quê.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Um maço em três minutos',
+            texto: 'É o único detalhe físico do estado dele, e é preciso: fumar um maço inteiro em três minutos não é possível, então o verso está medindo agitação, não consumo.' },
+          { linhas: [4, 5], cor: 1, titulo: 'A ameaça',
+            texto: 'A punição prometida é para quem disser não — não para quem fez algo, mas para quem contrariar. O critério deixou de ter relação com culpa.' },
+          { linhas: [6, 7], cor: 2, titulo: '"Herói em erupção"',
+            texto: 'Quem narra o chama de herói, e no verso seguinte informa que matar virou a primeira opção. As duas frases estão coladas e se contradizem — a contradição é do narrador, não do personagem, e é a mesma coisa que o refrão faz ao garantir a competência dele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Amélia de novo',
+        estrofes: [24, 25],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Ninguém esperava',
+            texto: 'A reação dela informa uma coisa sobre a história: quem trabalhava ali achava que aquele menino não voltaria mais. Ele foi dado como assunto encerrado.' },
+          { linhas: [2, 3], cor: 1, titulo: 'Os mesmos dois detalhes',
+            texto: 'Olho claro e cacho dourado, exatamente como na primeira aparição dela. A música descreve a mesma pessoa pelas mesmas duas características nas duas vezes, e a diferença é só o que elas estão fazendo: antes recebiam, agora se arrepiam.' },
+          { linhas: [4, 5], cor: 2, titulo: 'Encharcado',
+            texto: 'A letra não diz de quê. É a única informação sobre o estado físico dele ao chegar, e ela é deixada em aberto de propósito.' },
+          { linhas: [6, 7], cor: 0, titulo: 'O motivo, de novo',
+            texto: 'O irmão estava mal cuidado, e a narração diz que foi isso que aumentou a insanidade dele. A música mantém a mesma causa do começo ao fim: tudo o que o Jhonny faz é apresentado como resposta ao que fizeram com o irmão menor.' }
+        ]
+      },
+
+      {
+        rotulo: 'O diretor',
+        estrofes: [26],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A execução',
+            texto: 'A cena é descrita pelo esforço, com o verbo repetido três vezes, e não pelo resultado. É a única morte da música que ganha mais de um verso, e a vítima é a autoridade do lugar.' },
+          { linhas: [2, 3], cor: 2, titulo: 'De onde eles fogem',
+            texto: 'A palavra "inferno" já tinha aparecido na música, para dizer onde o pai foi parar. Agora ela nomeia o internato — e quem corre para fora são a Amélia e as outras pessoas, ou seja, o lugar que devia abrigar crianças esvazia com todos fugindo.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

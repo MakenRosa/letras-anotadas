@@ -3741,6 +3741,94 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'gato-cerveja',
+    titulo: 'Gato Cerveja',
+    epigrafe: 'Uma declaração de independência assinada com o nome que os outros deram',
+    estrofesEsperadas: 11,
+    contexto:
+      'Quem narra é um gato de rua, e a música é uma apresentação: ele diz onde vive, com quem anda ' +
+      'e o quanto se acha. Duas coisas organizam a letra. A primeira é o assunto do nome — ele afirma ' +
+      'que os bichos como ele andam sem receber nome e que o nome se faz caminhando, e logo em ' +
+      'seguida o refrão informa o nome que os humanos deram a ele, que é o título da música. A ' +
+      'segunda é o contraste: cada vez que ele se gaba, o verso vizinho mostra a lata de lixo. Das ' +
+      'onze estrofes, seis são o refrão, então o que a música tem a dizer cabe em quatro — e o resto ' +
+      'é ele repetindo o próprio nome.',
+
+    trechos: [
+      {
+        rotulo: 'Sem dono nem coleira',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Perder-se é a vantagem',
+            texto: 'Ele diz que se perde ao andar pelas ruas e, no verso seguinte, explica por quê: não tem dono nem coleira. Perder-se, aqui, é a consequência de não ter para onde voltar — e está sendo apresentado como qualidade.' },
+          { linhas: [2, 2], cor: 1, titulo: 'Onde ele se acha',
+            texto: 'O verbo tem dois sentidos ao mesmo tempo: encontrar-se e ter alta opinião de si. Os dois cabem, e os dois acontecem no mesmo lugar — nas latas dos becos. É a primeira vez que a música junta autoestima e lixo, e ela vai repetir isso.' },
+          { linhas: [3, 3], cor: 2, titulo: '"Os meus"',
+            texto: 'O verso fecha a estrofe definindo pertencimento: ele está melhor entre os iguais. A estrofe seguinte é inteira sobre quem são eles.' }
+        ]
+      },
+
+      {
+        rotulo: 'O nome se faz caminhando',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A regra que ele enuncia',
+            texto: 'Os bichos como ele andam sem receber nome, porque nome ali não é dado: é construído andando. É uma frase de ditado, e é a tese da música — guarde-a, porque o refrão vai contrariá-la em duas linhas.' },
+          { linhas: [2, 2], cor: 1, titulo: 'Correr ou se esconder',
+            texto: 'O verso apresenta as duas únicas opções do lugar, e não há terceira. Quem não tem velocidade tem esconderijo — é a descrição prática de como se sobrevive ali.' },
+          { linhas: [3, 3], cor: 2, titulo: 'A dor tem nome',
+            texto: 'O verso volta ao assunto do nome, agora aplicado ao sofrimento: ali a dor se chama fome. Entre todas as dores possíveis, a música nomeia uma só, e é a mais concreta.' }
+        ]
+      },
+
+      {
+        rotulo: 'Cerveja',
+        estrofes: [2],
+        repeticao: 'O refrão ocupa seis das onze estrofes da música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A descrição física',
+            texto: '"Brabo" é a forma falada de bravo, e vale por valente e por briguento ao mesmo tempo. O segundo verso dá a aparência com precisão: pelagem amarela com listras, ou seja, um gato tigrado laranja.' },
+          { linhas: [2, 3], cor: 2, titulo: 'O nome que ele não escolheu',
+            texto: 'Duas estrofes atrás ele disse que o nome se faz caminhando. Aqui informa o nome que tem — e quem o deu foram os humanos, o grupo a que ele não pertence. O nome provavelmente vem da cor, que é a mesma da bebida: batizado pela aparência, por gente que não o conhece. É esse nome recebido que dá título à música.' }
+        ]
+      },
+
+      {
+        rotulo: 'Tudo que eu quero',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A gabolice',
+            texto: 'Ele afirma conseguir tudo o que deseja e diz que nada é difícil para o grupo dele. É a estrofe mais confiante da música, e vem sem nenhum exemplo — a comprovação chega na estrofe seguinte, e é outra coisa.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Não se contenta com pouco',
+            texto: 'A recusa é dita duas vezes seguidas, com um resmungo no meio. É a única vez em que a música fala de insatisfação, e ela é apresentada como exigência, não como falta.' }
+        ]
+      },
+
+      {
+        rotulo: 'O rei do covil',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O que ele consegue',
+            texto: 'Logo depois de dizer que consegue tudo o que deseja, a atividade descrita é revirar saco de lixo. A música coloca a gabolice e a realidade em estrofes vizinhas, sem comentar a distância entre as duas. E explica o horário: a noite é o expediente dos bichos.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Rei de quê',
+            texto: 'Covil é palavra de toca de bicho, não de palácio, então o reinado tem o tamanho exato do buraco. Nesta apresentação já há um rei dos ratos e uma rainha dos bichos da floresta — os três reinam sobre o que ninguém disputa. O verso entre parênteses prepara a apresentação, e o que vem em seguida é o nome dado pelos humanos.' }
+        ]
+      },
+
+      {
+        rotulo: 'Gato mau',
+        estrofes: [6],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'A palavra que entra',
+            texto: 'O refrão volta com uma alteração única: ele deixa de ser "um gato brabo" e passa a ser "gato mau e brabo". É a única mudança em seis repetições, e acontece logo depois de ele se declarar rei.' },
+          { linhas: [3, 3], cor: 2, titulo: 'O nome não muda',
+            texto: 'Ele se promove de bravo a mau, mas o último verso continua igual — o nome dado pelos humanos permanece o mesmo em todas as versões do refrão. A música termina repetindo esse verso, e é a última coisa que ela diz.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

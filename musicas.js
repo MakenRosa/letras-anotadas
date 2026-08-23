@@ -4209,6 +4209,86 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'a-cancao-da-viagem',
+    titulo: 'A Canção da Viagem',
+    epigrafe: 'Um itinerário de oeste a leste, piorando a cada parada',
+    estrofesEsperadas: 10,
+    contexto:
+      'Todos os lugares citados existem no mapa de "Red Dead Redemption 2", e a música é literalmente ' +
+      'uma rota: sai de Nova Austin, no extremo oeste, e vai até Lemoyne, no extremo leste, passando ' +
+      'por Valentine e Saint Denis na ordem em que apareceriam na viagem. É a travessia do mapa ' +
+      'inteiro. O que a letra faz com isso é simples e eficiente: cada parada é pior que a anterior — ' +
+      'começa com beber demais numa cidade pequena e termina num pântano onde nem fora da lei entra. ' +
+      'O refrão nunca muda uma palavra, mas o peso dele aumenta porque o cenário em volta piora. E é ' +
+      'a música mais tranquila desta apresentação: não há enredo nem violência mostrada, só o ' +
+      'caminho e o aviso.',
+
+    trechos: [
+      {
+        rotulo: 'A rota',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Trotar, e não galopar',
+            texto: 'O trote é o andamento intermediário do cavalo, o que se usa para percorrer distância longa sem esgotar o animal. A escolha da palavra já informa o tipo de viagem: não é perseguição nem fuga, é deslocamento demorado.' },
+          { linhas: [2, 3], cor: 1, titulo: 'De uma ponta à outra',
+            texto: 'Nova Austin é a região mais a oeste do mapa do jogo, de deserto; Lemoyne é a mais a leste, de pântano e cidade grande. Nomear as duas é anunciar a maior viagem possível naquele território.' },
+          { linhas: [4, 4], cor: 2, titulo: 'A avaliação',
+            texto: 'O verso não é queixa nem entusiasmo: é constatação de distância. A música gasta a primeira estrofe inteira estabelecendo que o trajeto é grande, antes de dizer o que há nele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Valentine',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O primeiro perigo',
+            texto: 'Saqueadores na estrada são a ameaça mais comum da viagem, e no jogo são encontros que acontecem sozinhos, sem aviso. A letra os apresenta no futuro do indicativo: não é possibilidade, é certeza.' },
+          { linhas: [2, 4], cor: 2, titulo: 'A parada',
+            texto: 'Valentine é uma cidade pequena de gado, conhecida no jogo pelo saloon e pelas brigas de bêbado. O que a música promete ali é justamente beber além da conta — é a única coisa agradável do itinerário inteiro, e ela vem logo no começo.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os selvagens',
+        estrofes: [2, 3],
+        repeticao: 'O par de estrofes é o refrão e volta mais duas vezes, encerrando a música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A palavra do refrão',
+            texto: '"Selvagem" serve para bicho e para gente, e a música usa nos dois sentidos ao mesmo tempo. O aviso não distingue o que ataca por instinto do que ataca por escolha — do ponto de vista de quem viaja, dá no mesmo.' },
+          { linhas: [2, 3], cor: 1, titulo: 'A própria letra explica',
+            texto: 'Os dois versos seguintes dizem quem são: animais e ladrões. É raro uma letra glosar a própria imagem, e aqui isso serve para deixar claro que não há metáfora — o perigo é literal e de dois tipos.' },
+          { linhas: [4, 5], cor: 1, titulo: 'A repetição imediata',
+            texto: 'O aviso volta idêntico na estrofe seguinte, sem nada acrescentado nas duas primeiras linhas. É a estrutura de canção de estrada: uma frase que se repete no ritmo do caminho.' },
+          { linhas: [6, 7], cor: 2, titulo: '"Em todo lugar"',
+            texto: 'A segunda metade do refrão retira a última esperança útil: não há trecho seguro, então o cuidado não tem hora de acabar. É a única informação nova do refrão, e é por isso que ele funciona nas três vezes em que aparece.' }
+        ]
+      },
+
+      {
+        rotulo: 'Saint Denis',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'A cidade iluminada',
+            texto: 'Saint Denis é a cidade grande do jogo, inspirada em Nova Orleans, e a única com iluminação elétrica nas ruas. Mencionar as luzes não é enfeite: é o detalhe que separa aquele lugar de todo o resto do território, onde ainda se anda no escuro.' },
+          { linhas: [3, 4], cor: 2, titulo: 'O que a luz não alcança',
+            texto: 'Logo depois das luzes vêm os becos tomados por ratos. A estrofe monta a cidade em dois tempos — o que se vê na rua principal e o que está a um passo dela — e é assim que Saint Denis entra na lista de perigos sem deixar de ser a parada mais moderna do caminho.' }
+        ]
+      },
+
+      {
+        rotulo: 'Os pântanos',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O destino final',
+            texto: 'O pântano de Lemoyne é o fim da rota anunciada na primeira estrofe, e a música chega nele à noite. Depois de deserto, estrada e cidade, o lugar onde a viagem termina é o único descrito só pelo medo que causa.' },
+          { linhas: [2, 4], cor: 2, titulo: 'Nem o fora da lei',
+            texto: 'A medida usada é interessante: não é que pessoas comuns evitem o lugar, é que o mais corajoso dos criminosos não entra. Quem canta usa como régua de coragem justamente quem vive fora da lei — e é a única pista de quem são os viajantes desta música.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

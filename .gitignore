@@ -8,6 +8,8 @@ letras.local.js
 _novo.tmp.js
 _val.js
 _val.cjs
+_v.cjs.js
+_*.js
 *.tmp
 *.tmp.js
 

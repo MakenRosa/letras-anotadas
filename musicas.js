@@ -3454,6 +3454,116 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'cachecol',
+    titulo: 'Cachecol',
+    epigrafe: 'Ele se agasalha contra uma pessoa',
+    estrofesEsperadas: 24,
+    contexto:
+      'A imagem do título é simples e a música inteira depende dela: ele anda de cachecol e luva, ' +
+      'roupa de inverno, mas o frio de que se protege não é do tempo — é o do coração de alguém. E o ' +
+      'verbo escolhido não é proteger, é esconder. Estruturalmente a letra alterna três coisas: o ' +
+      'refrão do agasalho, um bloco em que ele repete que anda demais, e as estrofes novas. As ' +
+      'estrofes novas são poucas e vão explicando de onde veio o frio: primeiro uma reclamação ' +
+      'dirigida a Saturno, depois um sonho contado em oito partes, que é a única narrativa da música ' +
+      'e ocupa toda a segunda metade. Repare que caminhar sem destino é um recurso que volta em ' +
+      'várias músicas desta apresentação — aqui ele é o próprio refrão.',
+
+    trechos: [
+      {
+        rotulo: 'A cada passo',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 0], cor: 0, titulo: 'Andar já é o assunto',
+            texto: 'A música começa em movimento, e o que ele entrelaça a cada passo são duas coisas que costumam ser opostas: raiva e razão. Não é uma vencendo a outra — é uma trançada na outra, que é o que "entrelaçar" quer dizer.' },
+          { linhas: [1, 2], cor: 2, titulo: 'O que veio parar na mão dele',
+            texto: 'A palavra do meio do verso é difícil de fixar de ouvido e admite mais de uma leitura. A que combina com o resto da música é Adara, o nome de uma das estrelas mais brilhantes do céu — e aí o verso seguinte se explica sozinho, porque segurar uma estrela queima. A outra leitura possível é a de uma lâmina posta na mão pela desilusão, que também queima. Nos dois casos o sentido prático é o mesmo: a desilusão entregou a ele algo que não dava para segurar.' }
+        ]
+      },
+
+      {
+        rotulo: 'Cachecol e luva',
+        estrofes: [1],
+        repeticao: 'O refrão volta mais duas vezes ao longo da música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Esconder, não proteger',
+            texto: 'Cachecol serve para aquecer, mas o verso diz esconder. A peça de roupa está sendo usada para sumir, não para se agasalhar — e é a mesma escolha no verso da luva.' },
+          { linhas: [2, 3], cor: 1, titulo: 'De onde vem o frio',
+            texto: 'O último verso revela que o frio não é do clima: é o que o coração de outra pessoa produz. Toda a roupa de inverno da música existe por causa de alguém, e é isso que o título guarda.' }
+        ]
+      },
+
+      {
+        rotulo: 'Eu ando demais',
+        estrofes: [2, 3, 4, 5],
+        repeticao: 'O bloco inteiro volta mais duas vezes',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A frase e o eco',
+            texto: 'O verso vem sempre acompanhado dele mesmo entre parênteses, que é a marca de uma segunda voz repetindo atrás. Não há informação nova em nenhuma das repetições: só o fato de andar, dito muitas vezes.' },
+          { linhas: [2, 2], cor: 1, titulo: 'A vez sem eco',
+            texto: 'De quatro em quatro, o verso aparece sozinho, sem a voz de trás. É a única variação do bloco, e ela dá o ritmo: duas com companhia, uma sem.' },
+          { linhas: [3, 5], cor: 2, titulo: 'Andar como refrão',
+            texto: 'Onde outras músicas usam caminhada para atravessar o tempo, aqui ela é o refrão inteiro — não há destino, causa nem cansaço, só a constatação de que anda além da conta. É o que a música tem no lugar de um estribilho com assunto.' }
+        ]
+      },
+
+      {
+        rotulo: 'Saturno',
+        estrofes: [6],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Por que Saturno',
+            texto: 'Na astrologia, Saturno é o planeta associado às limitações, às provações e ao tempo — o chamado retorno de Saturno, por volta dos 29 anos, é tido como o período em que a vida cobra o que ficou pendente. Reclamar com ele é reclamar com o responsável, e não com o acaso.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A pergunta',
+            texto: 'Gritar no ouvido de um planeta é uma imagem de escala impossível, e o que ele grita é a pergunta mais comum que existe, repetida duas vezes. A música pede explicação a um corpo celeste e não recebe resposta nenhuma.' }
+        ]
+      },
+
+      {
+        rotulo: 'O sonho',
+        estrofes: [12, 13],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O chão desmancha',
+            texto: 'Ele começa subindo um morro de terra que vira lamaçal no meio da subida. A queda do fim da música já está preparada aqui: não dá para descer um barranco de lama de pé.' },
+          { linhas: [2, 3], cor: 2, titulo: 'As aves pressentem',
+            texto: 'Animais que percebem o perigo antes das pessoas são um recurso antigo de anúncio de desgraça. O verso marca que o que vem a seguir é ruim, antes de dizer o que é.' }
+        ]
+      },
+
+      {
+        rotulo: 'O balconista',
+        estrofes: [14, 15],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Quem guarda a porta',
+            texto: 'A figura que barra a entrada de um templo costuma ser um guardião, um anjo, um santo. Aqui é um balconista — a palavra de quem trabalha atrás de um balcão de loja. O sonho põe uma função de atendimento na porta de um lugar sagrado, e é essa escolha que dá o tom de toda a passagem.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A placa contradiz o portão',
+            texto: 'Mármore escuro, portão enorme, e uma placa dando boas-vindas a um mundo novo — tudo indicando entrada. Só que há alguém ali para impedir que ele entre. O convite está escrito na pedra e negado na prática.' }
+        ]
+      },
+
+      {
+        rotulo: 'A sentença',
+        estrofes: [16, 17],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O motivo da recusa',
+            texto: 'O balconista não fala de pecado nem de regra: diz que a vida dele não foi bem vivida. É uma avaliação, e é o único critério que a música apresenta para a entrada ser negada.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Ele já sabia',
+            texto: 'A resposta não é protesto: é concordância. E o que ele já sabia é a frase mais importante da música — que aquilo que o fortalecia ia acabar estragando-o. O caos foi útil e cobrou depois, e é essa conta que o sonho está executando.' }
+        ]
+      },
+
+      {
+        rotulo: 'O céu dos tolos',
+        estrofes: [18],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Que céu era aquele',
+            texto: '"Céu dos tolos" vem da expressão que nomeia um paraíso que só existe para quem se ilude. Então ser expulso de lá não é perder nada de verdadeiro — e ele cai como todos os outros, o que informa que a fila de expulsos é comprida.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A frente fria',
+            texto: 'O frio finalmente é dito como coisa que tomou conta da vida dele, e o verso seguinte responde com termo de previsão do tempo: frente fria, ele dispensa. É o mesmo trocadilho do título — tratar como clima aquilo que não é clima — e é com ele que a música volta para o refrão do cachecol.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

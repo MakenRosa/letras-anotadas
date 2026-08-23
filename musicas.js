@@ -4082,6 +4082,133 @@ window.MUSICAS = [
         ]
       }
     ]
+  },
+
+  {
+    id: 'julieta',
+    titulo: 'Julieta',
+    epigrafe: 'Ele ainda não conseguiu nem o número dela',
+    estrofesEsperadas: 9,
+    contexto:
+      'A música é uma admiração à distância, e vale começar pelo que ela informa sem dizer: até o ' +
+      'último verso, nada aconteceu entre os dois. Ele quer ver a peça dela e não conseguiu passagem, ' +
+      'vai tentar de bicicleta, pede o telefone e termina esperando encontrá-la um dia. O título ' +
+      'também merece atenção — Julieta é o papel que ela faz no teatro; o nome dela, repetido cinco ' +
+      'vezes no fim, é Jasmin. Ele nomeia a música pela personagem e chama a pessoa pelo nome. O ' +
+      'resto é referência: cada estrofe compara os dois por música, e as notas identificam bandas, ' +
+      'compositor e jogo citados, porque é por meio deles que a letra descreve as duas pessoas.',
+
+    trechos: [
+      {
+        rotulo: 'As playlists',
+        estrofes: [0],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A apresentação dela',
+            texto: 'As duas primeiras informações são o jeito de andar e o que ela escuta — e a playlist vai de black metal a música clássica, ou seja, cobre os dois extremos. A música vai usar gosto musical como retrato de personalidade do começo ao fim.' },
+          { linhas: [2, 2], cor: 1, titulo: 'Duas músicas específicas',
+            texto: '"Eyeless" é do Slipknot, de 1999; "Can You Feel My Heart" é do Bring Me the Horizon, de 2013. Não são gostos opostos: são dois pontos da mesma prateleira pesada, sendo o dele mais áspero e o dela mais melódico. A comparação é de grau, não de mundo.' },
+          { linhas: [3, 3], cor: 2, titulo: 'Lua e Marte',
+            texto: 'Jurar à Lua é gesto romântico antigo — inclusive é o que Romeu propõe a Julieta, e ela recusa por a Lua ser inconstante. Ele fica no juramento e ela vai colonizar outro planeta: o verso mede a diferença entre os dois em escala de ambição.' }
+        ]
+      },
+
+      {
+        rotulo: 'Julieta',
+        estrofes: [1],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Sentença e peça',
+            texto: '"Sentença" serve para decisão judicial e para frase completa, e as duas leituras cabem: ela chega como algo definitivo e como algo que já está inteiro. Em seguida vem a informação concreta da música — ela é atriz, e o papel é Julieta, que dá título à canção.' },
+          { linhas: [2, 2], cor: 1, titulo: 'Os verbos opostos',
+            texto: 'Ele destrói, ela conserta, ao mesmo tempo. É a definição mais direta do par, e repare que ele se atribui a pior metade sem nenhuma tentativa de justificar.' },
+          { linhas: [3, 3], cor: 2, titulo: 'Fábulas incertas',
+            texto: 'Ela é sempre a protagonista, e as histórias são incertas. O verso resume o que a música vai fazer com ela: colocá-la no centro de tudo sem que nada esteja definido.' }
+        ]
+      },
+
+      {
+        rotulo: 'O franco atirador',
+        estrofes: [2],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O Cupido virou atirador',
+            texto: 'A imagem de ser atingido no peito por causa de amor é antiga e vem da flecha do Cupido. A música troca a flecha por um franco-atirador — mesma cena, arma atualizada, e a pontaria continua sendo o assunto.' },
+          { linhas: [2, 3], cor: 2, titulo: 'A mira travada',
+            texto: '"Travada" indica que não foi acaso: alguém escolheu o alvo e esperou. A estrofe descreve o que ele sentiu como um ato deliberado dela, e essa é a única estrofe da música em que ela faz algo com ele.' }
+        ]
+      },
+
+      {
+        rotulo: 'Sem jeito',
+        estrofes: [3],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Deslocado',
+            texto: 'Basta ela falar para ele perder a compostura, e o verbo escolhido é de deslocamento — ele sai do lugar. É a continuação direta do tiro do trecho anterior, agora descrito pelo efeito.' },
+          { linhas: [2, 3], cor: 2, titulo: 'Um sorriso de canto',
+            texto: 'O gesto é pequeno, quase involuntário, e a consequência declarada é enorme: ele vai para outro mundo. A música mantém essa proporção — dela vêm coisas mínimas, e nele elas produzem efeitos de escala cósmica.' }
+        ]
+      },
+
+      {
+        rotulo: 'As cores',
+        estrofes: [4],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'Mayhem e a cor',
+            texto: 'Mayhem é uma das bandas fundadoras do black metal norueguês, e o gênero tem identidade visual em preto e branco — capas monocromáticas e maquiagem de cadáver. Dizer que ela o faz prestar atenção nas cores, logo depois de se declarar viciado em Mayhem, é preciso: o contraste é literalmente cromático.' },
+          { linhas: [2, 3], cor: 2, titulo: 'O obstáculo é dinheiro',
+            texto: 'Ele quer ver a peça e o que o impede é não ter arranjado passagem. O impedimento da música não é timidez nem distância emocional: é o preço do trem, e é a informação mais concreta da letra.' }
+        ]
+      },
+
+      {
+        rotulo: 'A bicicleta',
+        estrofes: [5],
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'A solução',
+            texto: 'Sem passagem, ele vai pedalando. A estrofe responde ao problema do verso anterior com o meio de transporte mais lento e mais trabalhoso — e é assim que a música demonstra o tamanho do interesse, por esforço e não por declaração.' },
+          { linhas: [2, 4], cor: 2, titulo: 'O vento a favor',
+            texto: 'A pedalada vira dança e o vento passa a ser o amor dela, empurrando. Ele transforma a parte cansativa do trajeto na parte agradável — e o verbo aplicado a ela é reinventar-se, que é o que uma atriz faz a cada papel.' }
+        ]
+      },
+
+      {
+        rotulo: 'Firekeeper',
+        estrofes: [6],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'O nome dela e Os Mutantes',
+            texto: 'Aqui aparece o nome: Jasmin. E o que ele oferece em troca é tocar Os Mutantes, banda brasileira da tropicália dos anos 1960 — a única referência nacional da música e a única que ele executa, em vez de só escutar.' },
+          { linhas: [3, 3], cor: 1, titulo: 'A quarta dimensão',
+            texto: 'O pedido é que ela prove que existe algo além das três dimensões, o que normalmente se refere ao tempo. É o segundo pedido impossível da estrofe, depois de flutuar, e os dois são dirigidos a uma pessoa comum.' },
+          { linhas: [4, 5], cor: 2, titulo: 'Dark Souls',
+            texto: 'Os dois versos vêm inteiros do jogo Dark Souls: o protagonista é o Morto Escolhido, Destreza é um dos atributos que se aumentam, e a Firekeeper é a personagem que guarda a fogueira e permite subir de nível. Ou seja, ele se coloca como o herói amaldiçoado e a chama de quem o torna mais forte. É o elogio mais específico da música inteira.' },
+          { linhas: [6, 7], cor: 0, titulo: 'Solo firme',
+            texto: 'A conclusão é que o mundo é deles porque só andam em chão firme. É a única afirmação de segurança da letra, e ela está numa estrofe construída sobre um jogo cujo mundo está desmoronando.' }
+        ]
+      },
+
+      {
+        rotulo: 'O número',
+        estrofes: [7],
+        notas: [
+          { linhas: [0, 2], cor: 0, titulo: 'O pedido de verdade',
+            texto: 'Depois de flutuar, quarta dimensão e Dark Souls, o que ele pede mesmo é o telefone. E a piada está nas duas opções que ele oferece de resposta: as duas são sim. É o momento em que a música admite que nada aconteceu ainda.' },
+          { linhas: [3, 3], cor: 1, titulo: 'O que ele manda em troca',
+            texto: 'O presente prometido é o link da playlist dele. A música começou descrevendo a playlist dela, e a forma de aproximação escolhida é trocar a própria — é o único meio de conversa que ele propõe.' },
+          { linhas: [4, 4], cor: 2, titulo: 'Tchaikovsky',
+            texto: 'O encaixe é exato. Tchaikovsky compôs a abertura-fantasia "Romeu e Julieta", cujo tema de amor é uma das músicas mais conhecidas do repertório clássico. Então quando ela faz Julieta, o que vem à cabeça dele é o compositor que escreveu a versão musical daquela mesma história — e isso ainda fecha a playlist dela, que ia do black metal ao clássico.' }
+        ]
+      },
+
+      {
+        rotulo: 'Além dos sonhos',
+        estrofes: [8],
+        repeticao: 'O nome e o verso se alternam até o fim da música',
+        notas: [
+          { linhas: [0, 1], cor: 0, titulo: 'O nome e a promessa',
+            texto: 'A música termina alternando o nome dela e uma frase no futuro. Não é reencontro nem despedida: é a expectativa de um encontro que ainda não teve data.' },
+          { linhas: [2, 4], cor: 2, titulo: '"Além dos meus sonhos"',
+            texto: 'A expressão diz que até agora ele só a encontrou em sonho, e que espera passar disso. Depois de duas estrofes de pedidos impossíveis, o desejo final é o mais modesto de todos — encontrar a pessoa acordado.' }
+        ]
+      }
+    ]
   }
 
   /* ------------------------------------------------------------------

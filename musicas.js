@@ -181,6 +181,10 @@ window.MUSICAS = [
   {
     id: 'rei-dos-ratos',
     titulo: 'Rei dos Ratos',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/reidosratos/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'O criador de um império que apodreceu',
     estrofesEsperadas: 8,
     contexto:
@@ -287,6 +291,10 @@ window.MUSICAS = [
   {
     id: 'noiva-cadaver',
     titulo: 'Noiva Cadáver',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/noivar-cadaver/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma canção de amor narrada por um assassino',
     estrofesEsperadas: 6,
     contexto:
@@ -363,6 +371,10 @@ window.MUSICAS = [
   {
     id: 'homem-torto',
     titulo: 'Homem Torto',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/homem-torto/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Um bicho-papão contado em forma de cantiga',
     estrofesEsperadas: 10,
     contexto:
@@ -451,6 +463,10 @@ window.MUSICAS = [
   {
     id: 'chuva-de-sexta',
     titulo: 'Chuva de Sexta',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/chuvadesextagif/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Saudade, uma estação de trem e um convite',
     estrofesEsperadas: 3,
     contexto:
@@ -523,6 +539,10 @@ window.MUSICAS = [
   {
     id: 'carrinho-de-madeira',
     titulo: 'Carrinho de Madeira',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/carrinho-de-madeira/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Saudade da infância, medida em segunda-feira',
     estrofesEsperadas: 11,
     contexto:
@@ -651,6 +671,10 @@ window.MUSICAS = [
   {
     id: 'cabelos-arco-iris',
     titulo: 'Cabelos Arco-Íris',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/cabelos-arco-iris/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Amor adolescente, contado por quem acabou de voltar',
     estrofesEsperadas: 5,
     contexto:
@@ -749,6 +773,10 @@ window.MUSICAS = [
   {
     id: 'botas-verdes-de-neon',
     titulo: 'Botas Verdes de Neon',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/botasverdesdeneonjpg/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma conversa entre o escalador e a montanha',
     estrofesEsperadas: 6,
     contexto:
@@ -848,6 +876,10 @@ window.MUSICAS = [
   {
     id: 'ave-expurgo',
     titulo: 'Ave Expurgo',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/ave-expurgo/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma oração pedindo extermínio, que termina se incluindo',
     estrofesEsperadas: 5,
     contexto:
@@ -942,6 +974,10 @@ window.MUSICAS = [
   {
     id: '6balas',
     titulo: '6Balas',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/6balas/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A carreira de um pistoleiro, contada por datas',
     estrofesEsperadas: 14,
     contexto:
@@ -1122,6 +1158,10 @@ window.MUSICAS = [
   {
     id: 'super-heroina',
     titulo: 'Super Heroína',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/superheroina/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma cantada montada inteira com referências',
     estrofesEsperadas: 12,
     contexto:
@@ -1241,6 +1281,10 @@ window.MUSICAS = [
   {
     id: 'manual-do-suicidio-pt1',
     titulo: 'Manual do Suicídio Pt.1',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/manualdosuicidiotxt/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A música que explica, no fim, por que ela existe',
     estrofesEsperadas: 7,
     contexto:
@@ -1422,6 +1466,10 @@ window.MUSICAS = [
   {
     id: 'cafe-das-6',
     titulo: 'Café das 6',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/cafe-das-6/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'O amargo e o doce, medidos na mesma xícara',
     estrofesEsperadas: 9,
     contexto:
@@ -1535,6 +1583,10 @@ window.MUSICAS = [
   {
     id: 'manual-do-suicidio-pt2',
     titulo: 'Manual do Suicídio Pt.2',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/manual-do-suicidio-parte-2txt/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A continuação, e o que mudou entre as duas',
     estrofesEsperadas: 6,
     contexto:
@@ -1741,6 +1793,10 @@ window.MUSICAS = [
   {
     id: 'moby-dick',
     titulo: 'Moby Dick',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/moby-dick/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Dois naufrágios famosos, os dois invertidos',
     estrofesEsperadas: 21,
     contexto:
@@ -1865,6 +1921,10 @@ window.MUSICAS = [
   {
     id: 'chale-em-alaska',
     titulo: 'Chalé em Alaska',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/chale-de-alaska/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Um plano de futuro, montado item por item',
     estrofesEsperadas: 7,
     contexto:
@@ -1977,6 +2037,10 @@ window.MUSICAS = [
   {
     id: 'chamas-da-vida',
     titulo: 'Chamas da Vida',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/chamas-da-vida/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma acusação dirigida a alguém que nunca é nomeado',
     estrofesEsperadas: 7,
     contexto:
@@ -2097,6 +2161,10 @@ window.MUSICAS = [
   {
     id: 'vermelho-vibrante',
     titulo: 'Vermelho Vibrante',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/vermelho-vibrante/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Ele pediu para deixar de ter medo, e virou o medo',
     estrofesEsperadas: 13,
     contexto:
@@ -2222,6 +2290,10 @@ window.MUSICAS = [
   {
     id: 'rainha-dos-bichos-da-floresta',
     titulo: 'Rainha dos Bichos da Floresta',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/rainha-dos-bichos-da-floresta/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma canção de ninar contada por cima de um corpo',
     estrofesEsperadas: 5,
     contexto:
@@ -2326,6 +2398,10 @@ window.MUSICAS = [
   {
     id: 'antes-e-depois-da-tempestade',
     titulo: 'Antes e Depois da Tempestade',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/antes-e-depois-da-tempestade/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma peça de Shakespeare encaixada dentro de um videogame',
     estrofesEsperadas: 9,
     contexto:
@@ -2460,6 +2536,10 @@ window.MUSICAS = [
   {
     id: 'morgana',
     titulo: 'Morgana',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/morgana/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma declaração de amor feita só de referências de terror',
     estrofesEsperadas: 10,
     contexto:
@@ -2584,6 +2664,10 @@ window.MUSICAS = [
   {
     id: 'lucy',
     titulo: 'Lucy',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/lucy/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Um pedido de carona para 1969',
     estrofesEsperadas: 10,
     contexto:
@@ -2672,6 +2756,10 @@ window.MUSICAS = [
   {
     id: 'ja-ja-chega-dezembro',
     titulo: 'Já, Já Chega Dezembro',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/ja-ja-chega-dezembro/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A única coisa que ele de fato fez está na última estrofe',
     estrofesEsperadas: 7,
     contexto:
@@ -2776,6 +2864,10 @@ window.MUSICAS = [
   {
     id: 'bob',
     titulo: 'BOB',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/bob/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Tudo o que a criança não pode dizer, quem diz é o Bob',
     estrofesEsperadas: 16,
     contexto:
@@ -2949,6 +3041,10 @@ window.MUSICAS = [
   {
     id: 'tsar',
     titulo: 'Tsar',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/tsar/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma carta de guerra, com o barulho medido em escala astronômica',
     estrofesEsperadas: 7,
     contexto:
@@ -3048,6 +3144,10 @@ window.MUSICAS = [
   {
     id: 'ragnarok',
     titulo: 'Ragnarok',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/ragnarok/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Declara guerra aos dois lados do fim do mundo',
     estrofesEsperadas: 8,
     contexto:
@@ -3142,6 +3242,10 @@ window.MUSICAS = [
   {
     id: 'future-love',
     titulo: 'Future Love',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/future-love/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Oferece o universo inteiro e um pastel com café',
     estrofesEsperadas: 4,
     contexto:
@@ -3227,6 +3331,10 @@ window.MUSICAS = [
   {
     id: 'dragao-de-nome-impronunciavel',
     titulo: 'Dragão de Nome Impronunciável',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/dragao-de-nome-impronunciavel/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A batalha não tem vencedor registrado',
     estrofesEsperadas: 12,
     contexto:
@@ -3387,6 +3495,10 @@ window.MUSICAS = [
   {
     id: 'lana',
     titulo: 'Lana',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/lana/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Como ele não consegue explicar a paixão, conclui que ela é bruxa',
     estrofesEsperadas: 9,
     contexto:
@@ -3465,6 +3577,10 @@ window.MUSICAS = [
   {
     id: 'cachecol',
     titulo: 'Cachecol',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/cachecol/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Ele se agasalha contra uma pessoa',
     estrofesEsperadas: 24,
     contexto:
@@ -3575,6 +3691,10 @@ window.MUSICAS = [
   {
     id: 'assalto-ao-banco',
     titulo: 'Assalto ao Banco',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/assalto-ao-banco/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'O primeiro verso já avisa como isso termina',
     estrofesEsperadas: 18,
     contexto:
@@ -3752,6 +3872,10 @@ window.MUSICAS = [
   {
     id: 'gato-cerveja',
     titulo: 'Gato Cerveja',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/gato-cerveja/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Uma declaração de independência assinada com o nome que os outros deram',
     estrofesEsperadas: 11,
     contexto:
@@ -3840,6 +3964,10 @@ window.MUSICAS = [
   {
     id: 'a-historia-de-jhonny',
     titulo: 'A História de Jhonny',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/a-historia-de-jhonny/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'O nome vem de Chuck Berry, e a história é o contrário da dele',
     estrofesEsperadas: 30,
     contexto:
@@ -4093,6 +4221,10 @@ window.MUSICAS = [
   {
     id: 'julieta',
     titulo: 'Julieta',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/julieta/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Ele ainda não conseguiu nem o número dela',
     estrofesEsperadas: 9,
     contexto:
@@ -4220,6 +4352,10 @@ window.MUSICAS = [
   {
     id: 'a-cancao-da-viagem',
     titulo: 'A Canção da Viagem',
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/a-cancao-da-viagem/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'Um itinerário de oeste a leste, piorando a cada parada',
     estrofesEsperadas: 10,
     contexto:

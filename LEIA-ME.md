@@ -85,6 +85,20 @@ de `notas`:
 - `alvo: 'repeticao'` — em vez de apontar para versos, o fio aponta para a marca de repetição.
 - `cor` — `0` azul, `1` vinho, `2` roxo.
 
+Além dos `trechos`, cada música aceita um campo opcional `fonte`, que cria um link para a
+letra original:
+
+```js
+fonte: {
+  url: 'https://exemplo.com/artista/musica/',
+  rotulo: 'Ver a letra no Exemplo'      // opcional
+}
+```
+
+O link aparece nos dois estados da música: no campo de colar, entre a instrução e a caixa
+de texto, e na abertura, abaixo do texto de contexto. Abre em uma aba nova e não avança o
+slide.
+
 O tamanho da fonte se ajusta sozinho para o trecho caber em 100 % da altura da tela,
 então dá para incluir estrofes longas sem quebrar o layout.
 

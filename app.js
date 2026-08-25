@@ -73,6 +73,9 @@
       'você só faz isso uma vez. Esperado: <strong>' + musica.estrofesEsperadas + ' estrofes</strong>.';
     painel.appendChild(sub);
 
+    var atalho = linkFonte(musica, 'fonte-formulario');
+    if (atalho) painel.appendChild(atalho);
+
     var area = el('textarea');
     area.placeholder = 'Cole a letra aqui...';
     area.spellcheck = false;
@@ -176,6 +179,30 @@
     return blocos;
   }
 
+  /* --------------------------------------------------------- link externo */
+
+  /* Link para a letra na fonte original. Aparece nos dois estados possiveis da
+     musica — no campo de colar (quando ainda nao ha letra) e na abertura
+     (quando ja ha) —, porque nos dois casos o usuario pode querer conferir o
+     texto. Abre em aba nova e nao dispara o clique que avanca o slide. */
+  function linkFonte(musica, cls) {
+    var f = musica.fonte;
+    if (!f || !f.url) return null;
+
+    var a = el('a', 'fonte' + (cls ? ' ' + cls : ''));
+    a.href = f.url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.appendChild(el('span', null, f.rotulo || 'Ver a letra completa na fonte'));
+    var icone = el('span', 'fonte-icone', '↗');
+    icone.setAttribute('aria-hidden', 'true');
+    a.appendChild(icone);
+    a.setAttribute('aria-label', (f.rotulo || 'Ver a letra completa na fonte') + ' (abre em uma nova aba)');
+    a.title = f.url;
+    a.addEventListener('click', function (ev) { ev.stopPropagation(); });
+    return a;
+  }
+
   /* --------------------------------------------------- render: importar */
 
   /* Musica ainda sem letra: no lugar do conteudo, o campo para colar. Nao
@@ -197,6 +224,8 @@
     s.appendChild(el('h1', null, musica.titulo));
     if (musica.epigrafe) s.appendChild(el('p', 'epigrafe', musica.epigrafe));
     if (musica.contexto) s.appendChild(el('p', 'contexto', musica.contexto));
+    var fonte = linkFonte(musica, 'fonte-capa');
+    if (fonte) s.appendChild(fonte);
     s.appendChild(el('p', 'dica', 'clique para começar'));
     return s;
   }

@@ -30,6 +30,12 @@ window.MUSICAS = [
   {
     id: 'sinfonia-do-inferno',
     titulo: 'Sinfonia do Inferno',
+    // "fonte" e opcional em qualquer musica: vira um link para a letra
+    // original, mostrado no campo de colar e na abertura da musica.
+    fonte: {
+      url: 'https://www.letras.mus.br/kamaitachi/robert-johnson-sinfonia-do-inferno/',
+      rotulo: 'Ver a letra no Letras.mus.br'
+    },
     epigrafe: 'A lenda da encruzilhada, contada em blues',
     estrofesEsperadas: 18,
     contexto:
